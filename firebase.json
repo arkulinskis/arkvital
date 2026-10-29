@@ -1,0 +1,33 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".git/**",
+      "**/.*",
+      "**/node_modules/**",
+      "project.mobirise",
+      "__/**",
+      "assets/bootstrap/**",
+      "assets/datepicker/**",
+      "assets/dropdown/**",
+      "assets/embla/**",
+      "assets/files/**",
+      "assets/formstyler/**",
+      "assets/lazysizes/**",
+      "assets/mbr-switch-arrow/**",
+      "assets/mobirise/**",
+      "assets/parallax/**",
+      "assets/popper/**",
+      "assets/popup-overlay-plugin/**",
+      "assets/smoothscroll/**",
+      "assets/socicon/**",
+      "assets/tether/**",
+      "assets/theme/**",
+      "assets/touchswipe/**",
+      "assets/Typed/**",
+      "assets/web/**"
+    ]
+  }
+}

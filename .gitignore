@@ -1,0 +1,30 @@
+# Firebase local files
+.firebase/
+firebase-debug.log
+__/
+
+# Old Mobirise builder files (not used by the site; a copy is in ArkVital-old-mobirise-backup)
+project.mobirise
+assets/bootstrap/
+assets/datepicker/
+assets/dropdown/
+assets/embla/
+assets/files/
+assets/formstyler/
+assets/lazysizes/
+assets/mbr-switch-arrow/
+assets/mobirise/
+assets/parallax/
+assets/popper/
+assets/popup-overlay-plugin/
+assets/smoothscroll/
+assets/socicon/
+assets/tether/
+assets/theme/
+assets/touchswipe/
+assets/Typed/
+assets/web/
+assets/formoid.min.js
+assets/recaptcha.css
+assets/images/hashes.json
+assets/images/mbr-121x121.png
