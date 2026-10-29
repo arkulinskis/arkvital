@@ -392,3 +392,10 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans)}
   .hero-backdrop::after{background:linear-gradient(180deg,rgb(238 230 215 / 0) 0%,rgb(238 230 215 / 0) 50%,rgb(238 230 215 / .8) 80%,#eee6d7 99%)}
   .hero-backdrop figcaption{display:none}
 }
+
+/* Portraits shown whole: taller frames, no zoom inside the frame */
+.about-photo img{aspect-ratio:2/3;object-position:50% 0%}
+.frame-tall img{aspect-ratio:4/5!important;object-position:50% 45%!important}
+.visual-tile:nth-child(3) img{object-position:50% 22%}
+.cta-photo img{object-position:50% 45%}
+@media(max-width:720px){.frame-tall img{aspect-ratio:1/1!important}}
