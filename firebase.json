@@ -6,6 +6,7 @@
       ".firebaserc",
       ".git/**",
       "**/.*",
+      "tools/**",
       "**/node_modules/**",
       "project.mobirise",
       "__/**",

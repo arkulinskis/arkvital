@@ -28,3 +28,6 @@ assets/formoid.min.js
 assets/recaptcha.css
 assets/images/hashes.json
 assets/images/mbr-121x121.png
+
+# Book build scratch files
+tools/books/build/
