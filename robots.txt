@@ -1,0 +1,23 @@
+# robots.txt for arkvital.com. Search engines and AI assistants are welcome to read and cite this site.
+User-agent: *
+Allow: /
+
+# AI search and answer engines, named so it's clear they are welcome too
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://arkvital.com/sitemap.xml
