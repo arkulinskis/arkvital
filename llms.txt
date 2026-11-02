@@ -24,9 +24,11 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 
 - [Addanapp](https://addanapp.com/): Montréal software consultancy for web apps, admin panels, client portals and data platforms. AI-accelerated, human-validated, fixed quotes. Pay for results.
 - [Adorable Science](https://adorablescience.com/): Fuzzy-hearted, well-sourced science news written by the community. Anyone can write an article; Lab Directors review every one before it is published.
+- [ArviStay](https://arvistay.com/): Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.
 - [AutoAgile](https://autoagile.anvil.app/): Kanban, sprints and roadmaps for crews of humans and AI developers. Complexity-gate estimates, an agent API, and levels that unlock as your crew matures.
 - [Battle Tracker](https://battletracker.anvil.app/): Upload or subscribe to STANAG 4607 GMTI, 4609 FMV metadata, 4545, CoT, NFFI, NVG, KML and more, and see it on one map in MIL-STD-2525 / APP-6 symbols. For exercises.
 - [Better Than Marketplace](https://bettermart.anvil.app/): Sell the stuff you don't need in seconds: snap a photo with your phone, give it a name, done. No categories, no forms, no fees. Browse what neighbours sell nearby.
+- [Brain Mechanic](https://brain-mechanic.anvil.app/): A repair manual for the mind: look up ADHD, anxiety, narcissism and upbringing patterns, run free self-checks and find tools. Not medical advice.
 - [Business Buddy](https://business-buddy.anvil.app/): How to open a small business in Montréal, step by step: barber shop, bakery, café, cleaning, trades and more. Permits, taxes, costs and a personal launch plan.
 - [Busy Bun](https://busybun.com/): Play a little bao bun on a culinary journey: run errands for the neighbours, fill your bun, smash pest nests and reach the steamer across 16 worlds and 118 levels.
 - [C-Suite Coach](https://csuite-coach.anvil.app/): Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.
@@ -35,8 +37,13 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [CityCrossers](https://citycrossers.com/): The walking club for people who would rather stroll 20 km than sprint 5: join group walks, plan routes with café stops, meet new people and earn points and perks.
 - [Doremi Road](https://doremiroad.com/): A piano-learning game: play notes, chords and progressions on a MIDI keyboard, computer keys or touch screen, train your ear and conquer the Realm of Harmony.
 - [Faves Buddy](https://faves-buddy.anvil.app/): Tame your open tabs, map pins, screenshots and ideas. Faves Buddy sorts them for you without AI, shows what's near you and finds more you will love.
+- [Fillfox](https://fillfox.anvil.app/): A free form builder: write a form like a document, share a link, see every answer and where people stopped. Logic, quizzes and signatures included.
 - [Fun To Plan](https://funtoplan.com/): A shared family board for 2 to 4 people: chores, events and wish lists, family chat, recurring tasks that take turns, and brownie points for getting things done.
+- [Good Landlord](https://good-landlord.anvil.app/): Track rent, expenses, mortgage and long-term profit for your rentals, and give tenants a private, tamper-evident record of messages and repairs.
+- [Health Booker](https://health-booker.anvil.app/): Find and book yoga classes across Montréal studios with one account. Studios get scheduling, passes, teacher subs and pay, with no commission and no contract.
+- [Hookline](https://hookline.anvil.app/): A free LinkedIn writing studio: hooks that survive the see-more fold, posts in your own voice, a calm calendar and honest analytics. Optional AI.
 - [ImgNovella](https://imgnovella.anvil.app/): Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.
+- [Jev Buddy](https://jev-buddy.anvil.app/): The friendly developer guide to Jev, the AI decision model: choice, noul and score explained with code, business examples, a playground and a cost calculator.
 - [Little Hero Books](https://little-hero-books.anvil.app/): Design a cartoon look-alike of your child, then read or download classic picture-book stories starring them as a PDF. Eight fairy tales retold for ages 3 to 6.
 - [Logsteps](https://logsteps.com/): Walk a room with your phone and get a 3D model you can replay, measure, pin notes on, share with a link and edit on your computer.
 - [Mafia Camp](https://mafia-camp-game.anvil.app/): A video party game for 3 to 10 friends: everyone joins one video call in the browser, gets a secret role and plays Mafia (Werewolf) at Camp Moonlake. No accounts.
@@ -44,7 +51,6 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [Marguru](https://marguru.anvil.app/): Describe your business and get copy-ready AI prompts for ads, Google Maps, SEO, content and reporting, in the order an ad agency would do the work.
 - [MonShop](https://monshop.ca/): See what independent shops, cafés and restaurants near you have today, from real shelf photos and specials, and get 5% off where you are a regular.
 - [MrBigStage](https://mrbigstage.anvil.app/): Step onto a big stage in VR, give your talk to a 3D audience and get coached on your voice: pace, pauses, fillers, pitch, volume and eye contact.
-- [Nouveau Stay](https://arvistay.com/): Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.
 - [OScreenplay](https://oscreenplay.com/): Write the screenplay you keep putting off: story sparks you can remix, characters that react like people, two timelines, structure guides and a proper script editor.
 - [Osinty](https://osinty.anvil.app/): Learn open-source intelligence (OSINT) the way private investigators use it: 24 lessons, realistic fictional case files, a field kit of tools and your own casebook.
 - [PerfectCast](https://perfectcast.anvil.app/): Fan-cast the newest romantasy books: every character, your dream celebrity collage, and what the whole fandom picks. Swoon over and comment on other readers' casts.
@@ -53,6 +59,8 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [PoundFighter](https://poundfighter.com/): Micro workouts for your workday, turned into a monster-collecting game: do reps in bed, at your desk or standing, count them by voice, and capture 36 monsters.
 - [Prepsto](https://prepsto.com/): A feedback panel you drop on any site with one link. Collect, triage and turn customer feedback into user stories, and let people track what happens to their idea.
 - [QuickyBricks](https://quickybricks.com/): Roll, doodle and hatch a giggly family of squishy 3D cubes. Hold hands with other players' cubes to make cube babies. A silly browser game to play with a grown-up.
+- [Reelstuber](https://reelstuber.anvil.app/): Drop in a long video: Reelstuber finds the best moments, reframes them to 9:16, adds word-by-word captions and exports MP4 reels. Nothing is uploaded.
+- [Robo Presence](https://robo-presence.anvil.app/): Build a camera robot on wheels with a Raspberry Pi, an Arduino or an old phone, install it with one command, and drive it live from any browser over WebRTC.
 - [RoboIntern](https://robointern.com/): Describe your data as a list of columns; RoboIntern ranks the right machine-learning models, explains the maths, and writes the Python to train and predict.
 - [Service Request](https://service-request.anvil.app/): Post a bounty and get help from a neighbour: leaves, snow, junk, moving and 40 other jobs from $20. Pay in cash or Interac e-Transfer, with a quality bonus.
 - [Sheetsmith](https://sheetsmith.anvil.app/): Upload an Excel workbook with its tables, formulas, rules and VBA macros and get a web app plus a small Python server that runs on your local network.
