@@ -18,7 +18,9 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 ## Free books
 
 - [Addicted To Hope](https://arkvital.com/books/addicted-to-hope.pdf)
+- [Addicted To Hope (EPUB)](https://arkvital.com/books/addicted-to-hope.epub)
 - [Adds Up To 180](https://arkvital.com/books/adds-up-to-180.pdf)
+- [Adds Up To 180 (EPUB)](https://arkvital.com/books/adds-up-to-180.epub)
 
 ## Apps by Arkvital
 
@@ -53,6 +55,7 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [MrBigStage](https://mrbigstage.anvil.app/): Step onto a big stage in VR, give your talk to a 3D audience and get coached on your voice: pace, pauses, fillers, pitch, volume and eye contact.
 - [OScreenplay](https://oscreenplay.com/): Write the screenplay you keep putting off: story sparks you can remix, characters that react like people, two timelines, structure guides and a proper script editor.
 - [Osinty](https://osinty.anvil.app/): Learn open-source intelligence (OSINT) the way private investigators use it: 24 lessons, realistic fictional case files, a field kit of tools and your own casebook.
+- [Parapeet](https://parapeet.com/): Learn everyday French phrases in ten moods: to your boss, a client, a hothead, a sad friend, your lover. Swipe the cards, play short lessons, keep your streak.
 - [PerfectCast](https://perfectcast.anvil.app/): Fan-cast the newest romantasy books: every character, your dream celebrity collage, and what the whole fandom picks. Swoon over and comment on other readers' casts.
 - [Plan Friday](https://planfriday.com/): Plan a last-minute weekend dinner party on Friday: send one link, guests pick the day and say what they're bringing, and you lock in the best day. No guest accounts.
 - [PlanPlate](https://planplate-test.anvil.app/): Run bookings for all your restaurants: opening hours, a drag-and-drop floor plan, automatic approvals, menus, specials, events and a booking form for your website.

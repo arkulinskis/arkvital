@@ -49,6 +49,9 @@ def sitemap():
                     % (url_of(p), TODAY, "1.0" if p == "index.html" else "0.7"))
     for pdf in sorted((HERE / "books").glob("*.pdf")):
         rows.append("<url><loc>%s/books/%s</loc><lastmod>%s</lastmod><priority>0.6</priority></url>" % (SITE, pdf.name, TODAY))
+        epub = pdf.with_suffix(".epub")
+        if epub.exists():
+            rows.append("<url><loc>%s/books/%s</loc><lastmod>%s</lastmod><priority>0.5</priority></url>" % (SITE, epub.name, TODAY))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "\n".join(rows) + "\n</urlset>\n")
 
@@ -79,7 +82,12 @@ def llms():
         out.append("- [%s](%s)" % (t, url_of(p)))
     books = sorted((HERE / "books").glob("*.pdf"))
     if books:
-        out += ["", "## Free books", ""] + ["- [%s](%s/books/%s)" % (b.stem.replace("-", " ").title(), SITE, b.name) for b in books]
+        out += ["", "## Free books", ""]
+        for b in books:
+            name = b.stem.replace("-", " ").title()
+            out.append("- [%s](%s/books/%s)" % (name, SITE, b.name))
+            if b.with_suffix(".epub").exists():
+                out.append("- [%s (EPUB)](%s/books/%s)" % (name, SITE, b.with_suffix(".epub").name))
     a = apps()
     if a:
         out += ["", "## Apps by Arkvital", ""] + a
