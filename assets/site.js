@@ -17,12 +17,32 @@
       }
     });
   }
+  // Videos: show a local thumbnail; load the YouTube player only when someone presses play.
+  document.querySelectorAll('.video-frame[data-video]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const p = new URLSearchParams({ autoplay: '1', rel: '0', modestbranding: '1', playsinline: '1' });
+      if (link.dataset.start) p.set('start', link.dataset.start);
+      if (link.dataset.end) p.set('end', link.dataset.end);
+      const frame = document.createElement('iframe');
+      frame.src = `https://www.youtube-nocookie.com/embed/${link.dataset.video}?${p}`;
+      frame.title = link.dataset.title || 'YouTube video';
+      frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      const box = document.createElement('div');
+      box.className = 'video-frame';
+      box.appendChild(frame);
+      link.replaceWith(box);
+      frame.focus();
+    });
+  });
   document.querySelectorAll('#year, .footer-year').forEach((el) => { el.textContent = new Date().getFullYear(); });
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Fade and lift content in as it scrolls into view.
-  const revealItems = document.querySelectorAll('.hero-copy, .hero-photo, .about-text, .about-photo, .section-head, .card, .project, .post, .visual-tile, .step, .service-row, .split-callout, .band-copy, .cta-copy, .cta-photo');
+  const revealItems = document.querySelectorAll('.hero-copy, .hero-photo, .about-text, .about-photo, .section-head, .card, .project, .post, .video, .visual-tile, .step, .service-row, .split-callout, .band-copy, .cta-copy, .cta-photo');
   if (!reducedMotion && 'IntersectionObserver' in window) {
     root.classList.add('motion-ready');
     const revealObserver = new IntersectionObserver((entries, observer) => {

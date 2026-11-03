@@ -427,3 +427,18 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans)}
 @media(max-width:960px){.book-list{grid-template-columns:1fr}.book{grid-template-columns:minmax(0,200px) minmax(0,1fr)}}
 @media(max-width:520px){.book{grid-template-columns:1fr}.book-cover{max-width:220px}}
 @media(prefers-reduced-motion:reduce){.book-cover{transition:none;transform:none}}
+/* Interests page: hero jump links + "Off the clock" videos (click to load YouTube) */
+.writing-jump{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0}
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.video{display:flex;flex-direction:column;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgb(39 39 39 / .035)}
+.video-frame{position:relative;display:block;aspect-ratio:16/9;background:#111;border-bottom:1px solid var(--line);cursor:pointer}
+.video-frame img,.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.video-play{position:absolute;left:50%;top:50%;width:72px;height:50px;transform:translate(-50%,-50%);display:grid;place-items:center;border-radius:14px;background:rgb(20 18 16 / .78);transition:background .2s ease,transform .2s ease}
+.video-play svg{width:28px;height:28px;fill:#fff}
+.video-frame:hover .video-play,.video-frame:focus-visible .video-play{background:#c4302b;transform:translate(-50%,-50%) scale(1.06)}
+.video-len{position:absolute;right:10px;bottom:10px;padding:2px 7px;border-radius:5px;background:rgb(20 18 16 / .8);color:#fff;font:600 .75rem/1.4 var(--sans)}
+.video-body{padding:20px 22px 22px}
+.video-body h3{margin:0 0 .35em}
+.video-body p{margin:0 0 14px;font-size:.92rem;line-height:1.6;color:var(--muted)}
+.video-note{margin:18px 0 0;font-size:.8rem;color:var(--muted)}
+@media(max-width:760px){.videos{grid-template-columns:1fr}.video-body{padding:18px}}
