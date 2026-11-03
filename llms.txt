@@ -10,6 +10,7 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [How I help — Vitalijs Arkulinskis](https://arkvital.com/services.html)
 - [Selected work — Vitalijs Arkulinskis](https://arkvital.com/projects.html)
 - [Interests — Vitalijs Arkulinskis](https://arkvital.com/blogs.html)
+- [CV (PDF)](https://arkvital.com/cv/Vitalijs-Arkulinskis-CV.pdf)
 - [The hidden work behind good work — Vitalijs Arkulinskis](https://arkvital.com/blog_1.html)
 - [Looking for problems for AI to solve — Vitalijs Arkulinskis](https://arkvital.com/blog_2.html)
 - [Don’t dismiss the silly idea — Vitalijs Arkulinskis](https://arkvital.com/blog_3.html)
