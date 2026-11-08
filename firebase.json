@@ -29,6 +29,80 @@
       "assets/touchswipe/**",
       "assets/Typed/**",
       "assets/web/**"
+    ],
+    "redirects": [
+      {
+        "source": "/page1.html",
+        "destination": "/blog_1.html",
+        "type": 301
+      },
+      {
+        "source": "/page2.html",
+        "destination": "/blog_2.html",
+        "type": 301
+      },
+      {
+        "source": "/page3.html",
+        "destination": "/blog_3.html",
+        "type": 301
+      },
+      {
+        "source": "/page4.html",
+        "destination": "/blogs.html",
+        "type": 301
+      },
+      {
+        "source": "/page5.html",
+        "destination": "/services.html",
+        "type": 301
+      }
+    ],
+    "headers": [
+      {
+        "source": "/assets/**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=2592000"
+          }
+        ]
+      },
+      {
+        "source": "/assets/**/*.@(webp|jpg|jpeg|png|svg|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "/books/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=86400"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=300"
+          }
+        ]
+      },
+      {
+        "source": "/@(robots.txt|sitemap.xml|llms.txt)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600"
+          }
+        ]
+      }
     ]
   }
 }

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://arkvital.com/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority></url>
-<url><loc>https://arkvital.com/services.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/projects.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/blogs.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/blog_1.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/blog_2.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/blog_3.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/privacy.html</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
-<url><loc>https://arkvital.com/books/addicted-to-hope.pdf</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
+<url><loc>https://arkvital.com/</loc><lastmod>2026-11-08</lastmod><priority>1.0</priority></url>
+<url><loc>https://arkvital.com/services.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/projects.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/apps.html</loc><lastmod>2026-11-08</lastmod><priority>0.8</priority></url>
+<url><loc>https://arkvital.com/blogs.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/blog_1.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/blog_2.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/blog_3.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/privacy.html</loc><lastmod>2026-11-08</lastmod><priority>0.7</priority></url>
+<url><loc>https://arkvital.com/books/addicted-to-hope.pdf</loc><lastmod>2026-10-31</lastmod><priority>0.6</priority></url>
 <url><loc>https://arkvital.com/books/addicted-to-hope.epub</loc><lastmod>2026-11-02</lastmod><priority>0.5</priority></url>
-<url><loc>https://arkvital.com/books/adds-up-to-180.pdf</loc><lastmod>2026-11-02</lastmod><priority>0.6</priority></url>
+<url><loc>https://arkvital.com/books/adds-up-to-180.pdf</loc><lastmod>2026-10-31</lastmod><priority>0.6</priority></url>
 <url><loc>https://arkvital.com/books/adds-up-to-180.epub</loc><lastmod>2026-11-02</lastmod><priority>0.5</priority></url>
 </urlset>

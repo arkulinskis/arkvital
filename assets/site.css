@@ -456,3 +456,28 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans)}
   .site-header .nav-links a:not(.btn){padding:12px 4px}
   .site-header .nav-links .btn{margin:10px 0 0;justify-content:center}
 }
+/* All apps directory (apps.html, built by tools/seo.py) */
+.app-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.app-jump a{padding:6px 12px;border:1px solid rgb(246 241 231 / .38);border-radius:999px;color:inherit;font:600 .78rem/1.3 var(--sans);text-decoration:none}
+.app-jump a:hover,.app-jump a:focus-visible{border-color:#f7bd50;color:#f7bd50}
+.apps-section .app-group+.app-group{margin-top:clamp(44px,6vw,68px)}
+.app-group{scroll-margin-top:90px}
+.app-group h2{display:flex;align-items:baseline;gap:10px;margin:0 0 20px;font-size:clamp(1.4rem,2.4vw,1.9rem)}
+.app-group h2 span{font:600 .8rem/1 var(--sans);color:var(--muted)}
+.app-dir{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.app-card{position:relative;display:flex;flex-direction:column;gap:8px;padding:20px 20px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;transition:transform .2s ease,box-shadow .2s ease}
+.app-card:hover,.app-card:focus-within{transform:translateY(-3px);box-shadow:var(--shadow)}
+.app-card h3{margin:0;font-size:1.15rem;line-height:1.25}
+.app-card h3 a{color:var(--ink);text-decoration:none}
+.app-card h3 a::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.app-card h3 a:focus-visible{outline:none}
+.app-card:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.app-card:hover h3 a{color:var(--accent)}
+.app-card p{margin:0 0 6px;font-size:.87rem;line-height:1.55;color:var(--muted)}
+.app-host{margin-top:auto;font:600 .76rem/1.3 var(--sans);color:var(--accent);overflow-wrap:anywhere}
+.app-free{position:absolute;top:16px;right:16px;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--ink);font:700 .62rem/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.apps-more{margin:34px 0 0;text-align:center}
+.apps-link{margin-right:14px}
+@media(max-width:900px){.app-dir{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.app-dir{grid-template-columns:1fr}}
+.app-card:has(.app-free) h3{padding-right:54px}

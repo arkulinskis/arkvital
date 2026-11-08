@@ -2,15 +2,15 @@
 
 > Vitalijs Arkulinskis helps teams solve messy business problems with leadership coaching, practical software, useful analytics, and automation.
 
-Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web apps below; each one has an /about page and an /llms.txt with more detail.
+Arkvital is the Montreal studio of Vitalijs Arkulinskis. Its parent company is Addanapp (https://addanapp.com). Arkvital publishes the web apps below; each one has an /about page and an /llms.txt with more detail.
 
 ## Pages
 
 - [Vitalijs Arkulinskis — People, systems, progress](https://arkvital.com/)
 - [How I help — Vitalijs Arkulinskis](https://arkvital.com/services.html)
 - [Selected work — Vitalijs Arkulinskis](https://arkvital.com/projects.html)
+- [All apps by Arkvital — Vitalijs Arkulinskis](https://arkvital.com/apps.html)
 - [Interests — Vitalijs Arkulinskis](https://arkvital.com/blogs.html)
-- [CV (PDF)](https://arkvital.com/cv/Vitalijs-Arkulinskis-CV.pdf)
 - [The hidden work behind good work — Vitalijs Arkulinskis](https://arkvital.com/blog_1.html)
 - [Looking for problems for AI to solve — Vitalijs Arkulinskis](https://arkvital.com/blog_2.html)
 - [Don’t dismiss the silly idea — Vitalijs Arkulinskis](https://arkvital.com/blog_3.html)
@@ -25,17 +25,19 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 
 ## Apps by Arkvital
 
-- [Addanapp](https://addanapp.com/): Montréal software consultancy for web apps, admin panels, client portals and data platforms. AI-accelerated, human-validated, fixed quotes. Pay for results.
+The same list as a web page: https://arkvital.com/apps.html
+
 - [Adorable Science](https://adorablescience.com/): Fuzzy-hearted, well-sourced science news written by the community. Anyone can write an article; Lab Directors review every one before it is published.
 - [ArviStay](https://arvistay.com/): Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.
 - [AutoAgile](https://autoagile.anvil.app/): Kanban, sprints and roadmaps for crews of humans and AI developers. Complexity-gate estimates, an agent API, and levels that unlock as your crew matures.
-- [Battle Tracker](https://battletracker.anvil.app/): Upload or subscribe to STANAG 4607 GMTI, 4609 FMV metadata, 4545, CoT, NFFI, NVG, KML and more, and see it on one map in MIL-STD-2525 / APP-6 symbols. For exercises.
 - [Better Than Marketplace](https://bettermart.anvil.app/): Sell the stuff you don't need in seconds: snap a photo with your phone, give it a name, done. No categories, no forms, no fees. Browse what neighbours sell nearby.
 - [Brain Mechanic](https://brain-mechanic.anvil.app/): A repair manual for the mind: look up ADHD, anxiety, narcissism and upbringing patterns, run free self-checks and find tools. Not medical advice.
 - [Business Buddy](https://business-buddy.anvil.app/): How to open a small business in Montréal, step by step: barber shop, bakery, café, cleaning, trades and more. Permits, taxes, costs and a personal launch plan.
 - [Busy Bun](https://busybun.com/): Play a little bao bun on a culinary journey: run errands for the neighbours, fill your bun, smash pest nests and reach the steamer across 16 worlds and 118 levels.
 - [C-Suite Coach](https://csuite-coach.anvil.app/): Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.
 - [CAF Guide](https://caf-guide.anvil.app/): An unofficial study app for the Canadian Armed Forces: active-recall flashcards on ranks, structure, training, history and acronyms, with a daily review.
+- [Campfire](https://campfire.anvil.app/): A campfire simulated live: fluid-simulated flames, crackles made by chance, logs that char and fall in. Three campsites, a sleep timer, no sign-up.
+- [CarChoice](https://carchoice.anvil.app/): Filter 268 car models by price, power, range, cargo, seats, towing and features, shortlist five, search the marketplaces and spot the listing that's priced well.
 - [City Fun Time](https://city-fun-time.anvil.app/): Your real neighbourhood, rebuilt in 3D from the map. Run errands, make friends, fall in love, open businesses and take over the blocks. 150+ missions at real places.
 - [CityCrossers](https://citycrossers.com/): The walking club for people who would rather stroll 20 km than sprint 5: join group walks, plan routes with café stops, meet new people and earn points and perks.
 - [Doremi Road](https://doremiroad.com/): A piano-learning game: play notes, chords and progressions on a MIDI keyboard, computer keys or touch screen, train your ear and conquer the Realm of Harmony.
@@ -45,6 +47,7 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [Good Landlord](https://good-landlord.anvil.app/): Track rent, expenses, mortgage and long-term profit for your rentals, and give tenants a private, tamper-evident record of messages and repairs.
 - [Health Booker](https://health-booker.anvil.app/): Find and book yoga classes across Montréal studios with one account. Studios get scheduling, passes, teacher subs and pay, with no commission and no contract.
 - [Hookline](https://hookline.anvil.app/): A free LinkedIn writing studio: hooks that survive the see-more fold, posts in your own voice, a calm calendar and honest analytics. Optional AI.
+- [Humbeat](https://humbeat.anvil.app/): Make any song in your browser: pick a style from hopecore to heavy metal, record your voice with auto-tune, and hum a melody that becomes any instrument.
 - [ImgNovella](https://imgnovella.anvil.app/): Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.
 - [Jev Buddy](https://jev-buddy.anvil.app/): The friendly developer guide to Jev, the AI decision model: choice, noul and score explained with code, business examples, a playground and a cost calculator.
 - [Little Hero Books](https://little-hero-books.anvil.app/): Design a cartoon look-alike of your child, then read or download classic picture-book stories starring them as a PDF. Eight fairy tales retold for ages 3 to 6.
@@ -56,10 +59,11 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [MrBigStage](https://mrbigstage.anvil.app/): Step onto a big stage in VR, give your talk to a 3D audience and get coached on your voice: pace, pauses, fillers, pitch, volume and eye contact.
 - [OScreenplay](https://oscreenplay.com/): Write the screenplay you keep putting off: story sparks you can remix, characters that react like people, two timelines, structure guides and a proper script editor.
 - [Osinty](https://osinty.anvil.app/): Learn open-source intelligence (OSINT) the way private investigators use it: 24 lessons, realistic fictional case files, a field kit of tools and your own casebook.
-- [Parapeet](https://parapeet.com/): Learn everyday French phrases in ten moods: to your boss, a client, a hothead, a sad friend, your lover. Swipe the cards, play short lessons, keep your streak.
+- [Parapeet](https://parapeet.com/): Learn everyday French, Spanish and Italian phrases in ten moods: to your boss, a client, a sad friend, your lover. Swipe, play short lessons, keep your streak.
 - [PerfectCast](https://perfectcast.anvil.app/): Fan-cast the newest romantasy books: every character, your dream celebrity collage, and what the whole fandom picks. Swoon over and comment on other readers' casts.
+- [PhotoHunt](https://photohunt.anvil.app/): Make a photo scavenger hunt in five minutes: snap things at home, kids scan a QR code and race to find and photograph them.
 - [Plan Friday](https://planfriday.com/): Plan a last-minute weekend dinner party on Friday: send one link, guests pick the day and say what they're bringing, and you lock in the best day. No guest accounts.
-- [PlanPlate](https://planplate-test.anvil.app/): Run bookings for all your restaurants: opening hours, a drag-and-drop floor plan, automatic approvals, menus, specials, events and a booking form for your website.
+- [PlanPlate](https://planplate.com/): Run bookings for all your restaurants: opening hours, a drag-and-drop floor plan, automatic approvals, menus, specials, events and a booking form for your website.
 - [PoundFighter](https://poundfighter.com/): Micro workouts for your workday, turned into a monster-collecting game: do reps in bed, at your desk or standing, count them by voice, and capture 36 monsters.
 - [Prepsto](https://prepsto.com/): A feedback panel you drop on any site with one link. Collect, triage and turn customer feedback into user stories, and let people track what happens to their idea.
 - [QuickyBricks](https://quickybricks.com/): Roll, doodle and hatch a giggly family of squishy 3D cubes. Hold hands with other players' cubes to make cube babies. A silly browser game to play with a grown-up.
@@ -75,6 +79,7 @@ Arkvital is the Montreal studio of Vitalijs Arkulinskis. It publishes the web ap
 - [Topameal](https://topameal.com/): Dinner, decided. Topameal picks quick one-pan toppers for the rice, pasta and potatoes you already have, and writes your shopping list for the week.
 - [VideoBlog Buddy](https://videoblog-buddy.anvil.app/): Record your screen and camera, edit, and publish YouTube videos, Shorts and Reels about the apps you build. All in the browser; recordings never leave your computer.
 - [VitalRPA](https://vitalrpa.com/): Website robots for busy teams: uptime checks every hour, SSL and domain expiry watch, a visitor beacon under 1 KB, and playbooks that act when something breaks.
+- [VRtoToon](https://vrtotoon.anvil.app/): Make 3D cartoons in your browser: perform every character yourself in a VR headset or with the mouse, direct on your computer, export video or Blender files.
 - [WallTracer](https://walltracer.anvil.app/): Pin a picture to your real wall with your Quest headset, put the controllers down and trace it with a pencil. Hide it with one button to check your lines.
 - [Yabanana](https://yabanana.com/): Write bars, poems and hooks over 12 beats built from song and poetry theory. Rhymes, similes and metaphors on tap; share your lyrics, get reviews and upvotes.
 
