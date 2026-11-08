@@ -173,3 +173,37 @@
   window.addEventListener('load', request);
   request();
 })();
+
+// Home page: three apps picked at random from all of them (data from tools/seo.py), plus Shuffle.
+(() => {
+  const box = document.querySelector('[data-app-picks]');
+  const data = document.getElementById('app-picks-data');
+  if (!box || !data) return;
+  let apps;
+  try { apps = JSON.parse(data.textContent); } catch (e) { return; }
+  if (!Array.isArray(apps) || apps.length < 4) return;
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const card = (a) => `<a class="project app-pick" href="${esc(a.url)}" target="_blank" rel="noopener">`
+    + `<img src="assets/img/apps/${esc(a.key)}.webp" alt="" width="720" height="450" loading="lazy">`
+    + `<div><span class="project-type">${esc(a.group)}</span><h3>${esc(a.name)}</h3><p>${esc(a.description)}</p>`
+    + `<span class="project-link">${esc(a.host)} ↗</span></div></a>`;
+  let shown = [...box.querySelectorAll('[data-key]')].map((el) => el.dataset.key);
+  const pick = () => {
+    const pool = apps.filter((a) => !shown.includes(a.key));
+    const out = [];
+    while (out.length < 3 && pool.length) out.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
+    shown = out.map((a) => a.key);
+    box.innerHTML = out.map(card).join('');
+    box.querySelectorAll('.app-pick').forEach((el, i) => { el.dataset.key = shown[i]; });
+  };
+  pick();
+  const btn = document.querySelector('[data-app-shuffle]');
+  if (btn) {
+    btn.hidden = false;
+    btn.addEventListener('click', () => {
+      pick();
+      const live = document.getElementById('app-picks-status');
+      if (live) live.textContent = 'Now showing ' + shown.map((k) => apps.find((a) => a.key === k).name).join(', ') + '.';
+    });
+  }
+})();

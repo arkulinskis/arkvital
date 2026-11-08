@@ -178,6 +178,47 @@ def slug(label):
     return re.sub(r"[^a-z]+", "-", label.lower()).strip("-")
 
 
+def group_of(a):
+    for label, cats in GROUPS:
+        if a["category"] in cats:
+            return label
+    return GROUPS[-1][0]
+
+
+HOME_START, HOME_END = "<!-- apps:start -->", "<!-- apps:end -->"
+HOME_OLD = '  <section class="section"><div class="wrap"><div class="section-head"><p class="kicker">My work through Addanapp</p>'
+
+
+def home_picks(text, apps):
+    """Home page: three apps (random in the browser via site.js; a fixed three for crawlers and no-JS), Shuffle, See all."""
+    e = lambda x: html.escape(x, quote=True)
+    if HOME_START not in text:
+        i = text.index(HOME_OLD)
+        j = text.index("</section>", i) + len("</section>")
+        text = text[:i] + "  " + HOME_START + HOME_END + text[j:]
+    have = [a for a in apps if (HERE / "assets" / "img" / "apps" / (a["key"] + ".webp")).exists()]
+    n = datetime.date.today().toordinal()
+    first = [have[(n * 7 + k * 19) % len(have)] for k in range(3)] if len(have) >= 3 else have
+    cards = "".join(
+        '<a class="project app-pick" data-key="%s" href="%s" target="_blank" rel="noopener">'
+        '<img src="assets/img/apps/%s.webp" alt="" width="720" height="450" loading="lazy">'
+        '<div><span class="project-type">%s</span><h3>%s</h3><p>%s</p><span class="project-link">%s ↗</span></div></a>'
+        % (e(a["key"]), e(a["url"]), e(a["key"]), e(group_of(a)), e(a["name"]), e(a["description"]), e(a["host"])) for a in first)
+    data = json.dumps([{"key": a["key"], "name": a["name"], "url": a["url"], "host": a["host"], "description": a["description"],
+                        "group": group_of(a)} for a in have], ensure_ascii=False).replace("</", "<\\/")
+    block = ('<section class="section home-apps" aria-labelledby="home-apps-h"><div class="wrap"><div class="section-head">'
+             '<p class="kicker">My work through Addanapp</p><h2 id="home-apps-h">From restaurant bookings to music theory games.</h2>'
+             '<p class="lead">I’ve built %d live apps for businesses, learners, families and creators. Here are three, picked at random.</p></div>'
+             '<div class="projects" data-app-picks>%s</div>'
+             '<div class="section-end apps-actions"><button class="btn btn-ghost" type="button" data-app-shuffle hidden>Shuffle <span aria-hidden="true">↻</span></button>'
+             '<a class="btn btn-primary" href="apps.html">See all %d apps <span aria-hidden="true">→</span></a>'
+             '<a class="text-link" href="projects.html">Selected work <span aria-hidden="true">→</span></a>'
+             '<span class="visually-hidden" id="app-picks-status" aria-live="polite"></span></div></div>'
+             '<script type="application/json" id="app-picks-data">%s</script></section>' % (len(apps), cards, len(apps), data))
+    i, j = text.index(HOME_START) + len(HOME_START), text.index(HOME_END)
+    return text[:i] + block + text[j:]
+
+
 def apps_page(apps):
     """apps.html: every live app grouped by kind, with links back and SoftwareApplication data tied to Arkvital."""
     e = lambda x: html.escape(x, quote=True)
@@ -216,8 +257,10 @@ def apps_page(apps):
         cards = []
         for a in items:
             free = '<span class="app-free">Free</span>' if a["free"] else ""
-            cards.append('<li class="app-card"><h3><a href="%s" target="_blank" rel="noopener">%s</a></h3><p>%s</p>'
-                         '<span class="app-host">%s ↗</span>%s</li>' % (e(a["url"]), e(a["name"]), e(a["description"]), e(a["host"]), free))
+            shot = ('<img class="app-shot" src="assets/img/apps/%s.webp" alt="" width="720" height="450" loading="lazy">' % e(a["key"])
+                    if (HERE / "assets" / "img" / "apps" / (a["key"] + ".webp")).exists() else "")
+            cards.append('<li class="app-card">%s<div class="app-body"><h3><a href="%s" target="_blank" rel="noopener">%s</a></h3><p>%s</p>'
+                         '<span class="app-host">%s ↗</span>%s</div></li>' % (shot, e(a["url"]), e(a["name"]), e(a["description"]), e(a["host"]), free))
         parts.append('<section class="app-group" id="%s" aria-labelledby="%s-h"><h2 id="%s-h">%s <span>%d</span></h2><ul class="app-dir">%s</ul></section>'
                      % (g, g, g, e(label), len(items), "".join(cards)))
     jump = "".join('<a href="#%s">%s</a>' % (slug(l), e(l)) for l, i in by_group)
@@ -288,7 +331,7 @@ if __name__ == "__main__":
         if p in PAGES and p != "apps.html":
             t2 = share_tags(p, t2)
         if p == "index.html":
-            t2 = person_ld(t2)
+            t2 = person_ld(home_picks(t2, app_rows))
         if t2 != t:
             write(p, t2)
     write("robots.txt", robots())
