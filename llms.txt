@@ -4,6 +4,8 @@
 
 Arkvital is the Montreal studio of Vitalijs Arkulinskis. Its parent company is Addanapp (https://addanapp.com). Arkvital publishes the web apps below; each one has an /about page and an /llms.txt with more detail.
 
+The site is in English, with full translations in French (https://arkvital.com/fr/), Spanish (https://arkvital.com/es/), Russian (https://arkvital.com/ru/) and Latvian (https://arkvital.com/lv/).
+
 ## Pages
 
 - [Vitalijs Arkulinskis — People, systems, progress](https://arkvital.com/)

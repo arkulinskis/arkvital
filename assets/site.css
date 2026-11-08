@@ -492,3 +492,39 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans)}
 .apps-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:28px}
 .apps-actions .text-link{margin:0}
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* Language menu in the header (tools/i18n.py) */
+.lang-menu{position:relative;list-style:none}
+.lang-menu details{position:relative}
+.lang-menu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px;padding:8px 10px;border-radius:8px;font-weight:600;font-size:.88rem;color:inherit}
+.lang-menu summary::-webkit-details-marker{display:none}
+.lang-menu summary::after{content:"";width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);margin-left:4px;opacity:.7}
+.lang-menu summary:hover,.lang-menu summary:focus-visible{color:#f7bd50}
+.lang-menu ul{position:absolute;right:0;top:calc(100% + 6px);z-index:60;min-width:150px;margin:0;padding:6px;list-style:none;background:#272727;border:1px solid rgb(255 255 255 / .14);border-radius:10px;box-shadow:0 10px 30px rgb(0 0 0 / .3)}
+.lang-menu ul a{display:block;padding:8px 10px;border-radius:6px;color:#f5efe4;text-decoration:none;font-size:.9rem;white-space:nowrap}
+.lang-menu ul a:hover,.lang-menu ul a:focus-visible{background:rgb(255 255 255 / .08);color:#f7bd50}
+.lang-menu ul a[aria-current]{color:#f7bd50;font-weight:700}
+@media (max-width:1100px){.lang-menu ul{position:static;box-shadow:none;border:0;padding:4px 0 0;background:transparent}.lang-menu summary{padding:12px 4px}}
+/* Translated pages have longer menu labels: use the menu button below 1400px */
+@media (max-width:1400px){
+  html:not([lang="en"]) .site-header .nav{position:relative}
+  html:not([lang="en"]) .site-header .menu-toggle{display:block;order:2;margin-left:auto}
+  html:not([lang="en"]) .site-header .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#272727;border-bottom:1px solid rgb(255 255 255 / .1);padding:8px var(--gutter) 18px;display:none;z-index:50}
+  html:not([lang="en"]) .site-header .nav-links.open{display:flex}
+  html:not([lang="en"]) .site-header .nav-links a:not(.btn){padding:12px 4px}
+  html:not([lang="en"]) .site-header .nav-links .btn{margin:10px 0 0;justify-content:center}
+  html:not([lang="en"]) .lang-menu ul{position:static;box-shadow:none;border:0;padding:4px 0 0;background:transparent}
+  html:not([lang="en"]) .lang-menu summary{padding:12px 4px}
+}
+@media (min-width:1401px){html:not([lang="en"]) .site-header .wrap{max-width:1380px}}
+
+/* English header with the language menu needs ~1180px */
+@media (max-width:1180px){
+  html[lang="en"] .site-header .nav{position:relative}
+  html[lang="en"] .site-header .menu-toggle{display:block;order:2;margin-left:auto}
+  html[lang="en"] .site-header .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#272727;border-bottom:1px solid rgb(255 255 255 / .1);padding:8px var(--gutter) 18px;display:none;z-index:50}
+  html[lang="en"] .site-header .nav-links.open{display:flex}
+  html[lang="en"] .site-header .nav-links a:not(.btn){padding:12px 4px}
+  html[lang="en"] .site-header .nav-links .btn{margin:10px 0 0;justify-content:center}
+  html[lang="en"] .lang-menu ul{position:static;box-shadow:none;border:0;padding:4px 0 0;background:transparent}
+  html[lang="en"] .lang-menu summary{padding:12px 4px}
+}

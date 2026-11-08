@@ -72,17 +72,31 @@ def changed(p):
     return TODAY if dirty or not day else day
 
 
+LANGS = ["en", "fr", "es", "ru", "lv"]  # translated copies in /<lang>/ come from tools/i18n.py
+
+
+def lang_url(lang, p):
+    return url_of(p) if lang == "en" else SITE + "/%s/" % lang + ("" if p == "index.html" else p)
+
+
 def sitemap():
     rows = []
     for p in PAGES:
-        rows.append("<url><loc>%s</loc><lastmod>%s</lastmod><priority>%s</priority></url>"
-                    % (url_of(p), changed(p), "1.0" if p == "index.html" else "0.8" if p == "apps.html" else "0.7"))
+        alts = "".join('<xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (l, lang_url(l, p)) for l in LANGS)
+        alts += '<xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % url_of(p)
+        pri = "1.0" if p == "index.html" else "0.8" if p == "apps.html" else "0.7"
+        for l in LANGS:
+            if l != "en" and not (HERE / l / p).exists():
+                continue
+            day = changed(p) if l == "en" else max(changed(p), changed(l + "/" + p))
+            rows.append("<url><loc>%s</loc><lastmod>%s</lastmod><priority>%s</priority>%s</url>"
+                        % (lang_url(l, p), day, pri if l == "en" else "%.1f" % (float(pri) - 0.1), alts))
     for pdf in sorted((HERE / "books").glob("*.pdf")):
         rows.append("<url><loc>%s/books/%s</loc><lastmod>%s</lastmod><priority>0.6</priority></url>" % (SITE, pdf.name, changed("books/" + pdf.name)))
         epub = pdf.with_suffix(".epub")
         if epub.exists():
             rows.append("<url><loc>%s/books/%s</loc><lastmod>%s</lastmod><priority>0.5</priority></url>" % (SITE, epub.name, changed("books/" + epub.name)))
-    return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(rows) + "\n</urlset>\n")
 
 
@@ -114,6 +128,7 @@ def llms():
     desc = meta(idx, r'<meta name="description" content="([^"]*)"')
     out = ["# Vitalijs Arkulinskis (Arkvital)", "", "> " + desc, "",
            "Arkvital is the Montreal studio of Vitalijs Arkulinskis. Its parent company is Addanapp (https://addanapp.com). Arkvital publishes the web apps below; each one has an /about page and an /llms.txt with more detail.", "",
+           "The site is in English, with full translations in French (%s/fr/), Spanish (%s/es/), Russian (%s/ru/) and Latvian (%s/lv/)." % (SITE, SITE, SITE, SITE), "",
            "## Pages", ""]
     for p in PAGES:
         t = meta(read(p), r"<title>(.*?)</title>")
@@ -166,9 +181,12 @@ def person_ld(text):
         {"@type": "Person", "@id": SITE + "/#person", "name": "Vitalijs Arkulinskis", "alternateName": "Arkvital",
          "url": SITE + "/", "image": SITE + "/assets/img/og.jpg", "description": desc,
          "worksFor": {"@id": SITE + "/#org"}, "sameAs": [LINKEDIN, GITHUB],
+         "jobTitle": "Project and people leader; mechanical and software engineer",
+         "knowsAbout": ["Product management", "Leadership coaching", "Change management", "Internal tools",
+                        "Data analytics", "Automation", "Software engineering"],
          "address": {"@type": "PostalAddress", "addressLocality": "Montreal", "addressRegion": "QC", "addressCountry": "CA"}},
         ORG,
-        {"@type": "WebSite", "@id": SITE + "/#site", "url": SITE + "/", "name": "Arkvital", "inLanguage": "en",
+        {"@type": "WebSite", "@id": SITE + "/#site", "url": SITE + "/", "name": "Arkvital", "inLanguage": LANGS,
          "publisher": {"@id": SITE + "/#org"}}]}
     text = re.sub(r'<script type="application/ld\+json">.*?</script>\n?', "", text, flags=re.S)
     return text.replace("</head>", ld_tag(ld) + "\n</head>", 1)
@@ -292,7 +310,8 @@ def apps_page(apps):
              "publisher": {"@id": SITE + "/#org"}, "author": {"@id": SITE + "/#person"}}} for i, a in enumerate(apps)]},
         ORG]}
     head = head.replace("</head>", ld_tag(ld) + "\n</head>", 1)
-    return head + header + main + footer
+    import i18n  # same language menu and hreflang links the translation build adds
+    return i18n.add_hreflang(i18n.add_switcher(head + header + main + footer, "en", "apps.html"), "apps.html")
 
 
 FOOTER_FROM = '<a href="projects.html">Selected work</a><a href="blogs.html">'
@@ -337,3 +356,6 @@ if __name__ == "__main__":
     write("robots.txt", robots())
     write("sitemap.xml", sitemap())
     write("llms.txt", llms())
+    # translated copies (/fr/ /es/ /ru/ /lv/) are rebuilt from the English pages just written
+    import i18n
+    i18n.build()
