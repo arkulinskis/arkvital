@@ -178,7 +178,7 @@ def person_ld(text):
     """Person + Organization + WebSite on the home page. Rewritten every run so it stays current."""
     desc = meta(text, r'<meta name="description" content="([^"]*)"')
     ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "Person", "@id": SITE + "/#person", "name": "Vitalijs Arkulinskis", "alternateName": "Arkvital",
+        {"@type": "Person", "@id": SITE + "/#person", "name": "Vitalijs Arkulinskis", "alternateName": ["Arkvital", "Виталий Аркулинский", "Vitālijs Arkulinskis"],
          "url": SITE + "/", "image": SITE + "/assets/img/og.jpg", "description": desc,
          "worksFor": {"@id": SITE + "/#org"}, "sameAs": [LINKEDIN, GITHUB],
          "jobTitle": "Project and people leader; mechanical and software engineer",

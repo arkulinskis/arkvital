@@ -256,23 +256,7 @@
 "page": "index.html"
 },
 {
-"text": "I’ve built 55 live apps for businesses, learners, families and creators. Here are three, picked at random.",
-"page": "index.html"
-},
-{
-"text": "Run a business",
-"page": "index.html"
-},
-{
-"text": "PlanPlate",
-"page": "index.html"
-},
-{
-"text": "Run bookings for all your restaurants: opening hours, a drag-and-drop floor plan, automatic approvals, menus, specials, events and a booking form for your website.",
-"page": "index.html"
-},
-{
-"text": "planplate.com ↗",
+"text": "I’ve built 56 live apps for businesses, learners, families and creators. Here are three, picked at random.",
 "page": "index.html"
 },
 {
@@ -292,15 +276,31 @@
 "page": "index.html"
 },
 {
-"text": "Hookline",
+"text": "Health and everyday life",
 "page": "index.html"
 },
 {
-"text": "A free LinkedIn writing studio: hooks that survive the see-more fold, posts in your own voice, a calm calendar and honest analytics. Optional AI.",
+"text": "Health Booker",
 "page": "index.html"
 },
 {
-"text": "hookline.anvil.app ↗",
+"text": "Find and book yoga classes across Montréal studios with one account. Studios get scheduling, passes, teacher subs and pay, with no commission and no contract.",
+"page": "index.html"
+},
+{
+"text": "health-booker.anvil.app ↗",
+"page": "index.html"
+},
+{
+"text": "PoundFighter",
+"page": "index.html"
+},
+{
+"text": "Micro workouts for your workday, turned into a monster-collecting game: do reps in bed, at your desk or standing, count them by voice, and capture 36 monsters.",
+"page": "index.html"
+},
+{
+"text": "poundfighter.com ↗",
 "page": "index.html"
 },
 {
@@ -308,7 +308,7 @@
 "page": "index.html"
 },
 {
-"text": "See all 55 apps",
+"text": "See all 56 apps",
 "page": "index.html"
 },
 {
@@ -380,7 +380,15 @@
 "page": "index.html"
 },
 {
+"text": "Free AI engineering training and certification: context engineering, production RAG, agents, evals, security and LLMOps, with drills, labs and real incident files.",
+"page": "index.html"
+},
+{
 "text": "Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.",
+"page": "index.html"
+},
+{
+"text": "Run a business",
 "page": "index.html"
 },
 {
@@ -393,10 +401,6 @@
 },
 {
 "text": "A repair manual for the mind: look up ADHD, anxiety, narcissism and upbringing patterns, run free self-checks and find tools. Not medical advice.",
-"page": "index.html"
-},
-{
-"text": "Health and everyday life",
 "page": "index.html"
 },
 {
@@ -460,7 +464,7 @@
 "page": "index.html"
 },
 {
-"text": "Find and book yoga classes across Montréal studios with one account. Studios get scheduling, passes, teacher subs and pay, with no commission and no contract.",
+"text": "A free LinkedIn writing studio: hooks that survive the see-more fold, posts in your own voice, a calm calendar and honest analytics. Optional AI.",
 "page": "index.html"
 },
 {
@@ -532,7 +536,7 @@
 "page": "index.html"
 },
 {
-"text": "Micro workouts for your workday, turned into a monster-collecting game: do reps in bed, at your desk or standing, count them by voice, and capture 36 monsters.",
+"text": "Run bookings for all your restaurants: opening hours, a drag-and-drop floor plan, automatic approvals, menus, specials, events and a booking form for your website.",
 "page": "index.html"
 },
 {
@@ -896,7 +900,7 @@
 "page": "projects.html"
 },
 {
-"text": "See all 55 apps →",
+"text": "See all 56 apps →",
 "page": "projects.html"
 },
 {
@@ -909,6 +913,10 @@
 },
 {
 "text": "RESTAURANT PLATFORM",
+"page": "projects.html"
+},
+{
+"text": "PlanPlate",
 "page": "projects.html"
 },
 {
@@ -1080,10 +1088,6 @@
 "page": "projects.html"
 },
 {
-"text": "PoundFighter",
-"page": "projects.html"
-},
-{
 "text": "FITNESS · VOICE",
 "page": "projects.html"
 },
@@ -1164,7 +1168,7 @@
 "page": "projects.html"
 },
 {
-"text": "Browse all 55 apps →",
+"text": "Browse all 56 apps →",
 "page": "projects.html"
 },
 {
@@ -1180,7 +1184,7 @@
 "page": "projects.html"
 },
 {
-"text": "55 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
+"text": "56 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
 "page": "apps.html"
 },
 {
@@ -1196,7 +1200,7 @@
 "page": "apps.html"
 },
 {
-"text": "55 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
+"text": "56 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
 "page": "apps.html"
 },
 {
@@ -1248,6 +1252,14 @@
 "page": "apps.html"
 },
 {
+"text": "Hookline",
+"page": "apps.html"
+},
+{
+"text": "hookline.anvil.app ↗",
+"page": "apps.html"
+},
+{
 "text": "Jev Buddy",
 "page": "apps.html"
 },
@@ -1265,6 +1277,10 @@
 },
 {
 "text": "monshop.ca ↗",
+"page": "apps.html"
+},
+{
+"text": "planplate.com ↗",
 "page": "apps.html"
 },
 {
@@ -1297,6 +1313,14 @@
 },
 {
 "text": "vitalrpa.com ↗",
+"page": "apps.html"
+},
+{
+"text": "AI Expert",
+"page": "apps.html"
+},
+{
+"text": "aiexpert.anvil.app ↗",
 "page": "apps.html"
 },
 {
@@ -1452,23 +1476,11 @@
 "page": "apps.html"
 },
 {
-"text": "Health Booker",
-"page": "apps.html"
-},
-{
-"text": "health-booker.anvil.app ↗",
-"page": "apps.html"
-},
-{
 "text": "Plan Friday",
 "page": "apps.html"
 },
 {
 "text": "planfriday.com ↗",
-"page": "apps.html"
-},
-{
-"text": "poundfighter.com ↗",
 "page": "apps.html"
 },
 {

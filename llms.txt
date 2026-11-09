@@ -30,6 +30,7 @@ The site is in English, with full translations in French (https://arkvital.com/f
 The same list as a web page: https://arkvital.com/apps.html
 
 - [Adorable Science](https://adorablescience.com/): Fuzzy-hearted, well-sourced science news written by the community. Anyone can write an article; Lab Directors review every one before it is published.
+- [AI Expert](https://aiexpert.anvil.app/): Free AI engineering training and certification: context engineering, production RAG, agents, evals, security and LLMOps, with drills, labs and real incident files.
 - [ArviStay](https://arvistay.com/): Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.
 - [AutoAgile](https://autoagile.anvil.app/): Kanban, sprints and roadmaps for crews of humans and AI developers. Complexity-gate estimates, an agent API, and levels that unlock as your crew matures.
 - [Better Than Marketplace](https://bettermart.anvil.app/): Sell the stuff you don't need in seconds: snap a photo with your phone, give it a name, done. No categories, no forms, no fees. Browse what neighbours sell nearby.
