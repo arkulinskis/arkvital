@@ -53,7 +53,7 @@ The same list as a web page: https://arkvital.com/apps.html
 - [Humbeat](https://humbeat.anvil.app/): Make any song in your browser: pick a style from hopecore to heavy metal, record your voice with auto-tune, and hum a melody that becomes any instrument.
 - [ImgNovella](https://imgnovella.anvil.app/): Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.
 - [Jev Buddy](https://jev-buddy.anvil.app/): The friendly developer guide to Jev, the AI decision model: choice, noul and score explained with code, business examples, a playground and a cost calculator.
-- [Little Hero Books](https://little-hero-books.anvil.app/): Design a cartoon look-alike of your child, then read or download classic picture-book stories starring them as a PDF. Eight fairy tales retold for ages 3 to 6.
+- [Little Hero Books](https://littleheroapp.com/): Design a cartoon look-alike of your child, then read, colour, paint or print classic fairy tales starring them. Twelve tales retold for ages 3 to 6.
 - [Logsteps](https://logsteps.com/): Walk a room with your phone and get a 3D model you can replay, measure, pin notes on, share with a link and edit on your computer.
 - [Mafia Camp](https://mafia-camp-game.anvil.app/): A video party game for 3 to 10 friends: everyone joins one video call in the browser, gets a secret role and plays Mafia (Werewolf) at Camp Moonlake. No accounts.
 - [Make Your Own Clothes](https://make-my-clothes.anvil.app/): Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.
