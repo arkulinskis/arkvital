@@ -25,7 +25,7 @@ LINKEDIN = "https://www.linkedin.com/in/vitalijsarkulinskis/"
 GITHUB = "https://github.com/arkulinskis"
 # Apps left out of the public directory: Addanapp is the parent company (linked on its own), Image Enhancer is a
 # private API. Apps with "board": false in apps.json are left out too.
-SKIP_APPS = {"addanapp", "imageenhancer"}
+SKIP_APPS = {"addanapp", "imageenhancer", "sayback"}  # Sayback: remove it here once its audio (R2) and Stripe checkout are set up
 # Public address when it differs from apps.json (planplate.com runs the live PlanPlate business).
 PUBLIC_URL = {"restres": "https://planplate.com"}
 GROUPS = [

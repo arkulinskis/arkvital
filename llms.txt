@@ -69,6 +69,7 @@ The same list as a web page: https://arkvital.com/apps.html
 - [PlanPlate](https://planplate.com/): Run bookings for all your restaurants: opening hours, a drag-and-drop floor plan, automatic approvals, menus, specials, events and a booking form for your website.
 - [PoundFighter](https://poundfighter.com/): Micro workouts for your workday, turned into a monster-collecting game: do reps in bed, at your desk or standing, count them by voice, and capture 36 monsters.
 - [Prepsto](https://prepsto.com/): A feedback panel you drop on any site with one link. Collect, triage and turn customer feedback into user stories, and let people track what happens to their idea.
+- [Product Expert](https://productexpert.anvil.app/): Free director of product training and certificates: strategy, experiments, metrics, pricing, the P&L, org design, executive influence and AI products.
 - [QuickyBricks](https://quickybricks.com/): Roll, doodle and hatch a giggly family of squishy 3D cubes. Hold hands with other players' cubes to make cube babies. A silly browser game to play with a grown-up.
 - [Reelstuber](https://reelstuber.anvil.app/): Drop in a long video: Reelstuber finds the best moments, reframes them to 9:16, adds word-by-word captions and exports MP4 reels. Nothing is uploaded.
 - [Robo Presence](https://robo-presence.anvil.app/): Build a camera robot on wheels with a Raspberry Pi, an Arduino or an old phone, install it with one command, and drive it live from any browser over WebRTC.
