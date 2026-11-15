@@ -58,6 +58,7 @@ The same list as a web page: https://arkvital.com/apps.html
 - [Mafia Camp](https://mafia-camp-game.anvil.app/): A video party game for 3 to 10 friends: everyone joins one video call in the browser, gets a secret role and plays Mafia (Werewolf) at Camp Moonlake. No accounts.
 - [Make Your Own Clothes](https://make-my-clothes.anvil.app/): Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.
 - [Marguru](https://marguru.anvil.app/): Describe your business and get copy-ready AI prompts for ads, Google Maps, SEO, content and reporting, in the order an ad agency would do the work.
+- [Master Investor](https://master-investor.anvil.app/): Free investing lessons from beginner to quant: valuing companies, DCF, data sources, risk, trading and backtesting, with reveal-the-answer cards and calculators.
 - [MonShop](https://monshop.ca/): See what independent shops, cafés and restaurants near you have today, from real shelf photos and specials, and get 5% off where you are a regular.
 - [MrBigStage](https://mrbigstage.anvil.app/): Step onto a big stage in VR, give your talk to a 3D audience and get coached on your voice: pace, pauses, fillers, pitch, volume and eye contact.
 - [OScreenplay](https://oscreenplay.com/): Write the screenplay you keep putting off: story sparks you can remix, characters that react like people, two timelines, structure guides and a proper script editor.

@@ -256,7 +256,7 @@
 "page": "index.html"
 },
 {
-"text": "I’ve built 57 live apps for businesses, learners, families and creators. Here are three, picked at random.",
+"text": "I’ve built 58 live apps for businesses, learners, families and creators. Here are three, picked at random.",
 "page": "index.html"
 },
 {
@@ -264,31 +264,15 @@
 "page": "index.html"
 },
 {
-"text": "Make Your Own Clothes",
+"text": "ImgNovella",
 "page": "index.html"
 },
 {
-"text": "Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.",
+"text": "Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.",
 "page": "index.html"
 },
 {
-"text": "make-my-clothes.anvil.app ↗",
-"page": "index.html"
-},
-{
-"text": "Run a business",
-"page": "index.html"
-},
-{
-"text": "Sheetsmith",
-"page": "index.html"
-},
-{
-"text": "Upload an Excel workbook with its tables, formulas, rules and VBA macros and get a web app plus a small Python server that runs on your local network.",
-"page": "index.html"
-},
-{
-"text": "sheetsmith.anvil.app ↗",
+"text": "imgnovella.anvil.app ↗",
 "page": "index.html"
 },
 {
@@ -296,15 +280,31 @@
 "page": "index.html"
 },
 {
-"text": "C-Suite Coach",
+"text": "Product Expert",
 "page": "index.html"
 },
 {
-"text": "Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.",
+"text": "Free director of product training and certificates: strategy, experiments, metrics, pricing, the P&L, org design, executive influence and AI products.",
 "page": "index.html"
 },
 {
-"text": "csuite-coach.anvil.app ↗",
+"text": "productexpert.anvil.app ↗",
+"page": "index.html"
+},
+{
+"text": "Run a business",
+"page": "index.html"
+},
+{
+"text": "ArviStay",
+"page": "index.html"
+},
+{
+"text": "Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.",
+"page": "index.html"
+},
+{
+"text": "arvistay.com ↗",
 "page": "index.html"
 },
 {
@@ -312,7 +312,7 @@
 "page": "index.html"
 },
 {
-"text": "See all 57 apps",
+"text": "See all 58 apps",
 "page": "index.html"
 },
 {
@@ -392,10 +392,6 @@
 "page": "index.html"
 },
 {
-"text": "Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.",
-"page": "index.html"
-},
-{
 "text": "Kanban, sprints and roadmaps for crews of humans and AI developers. Complexity-gate estimates, an agent API, and levels that unlock as your crew matures.",
 "page": "index.html"
 },
@@ -421,6 +417,10 @@
 },
 {
 "text": "Games and fun",
+"page": "index.html"
+},
+{
+"text": "Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.",
 "page": "index.html"
 },
 {
@@ -480,10 +480,6 @@
 "page": "index.html"
 },
 {
-"text": "Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.",
-"page": "index.html"
-},
-{
 "text": "The friendly developer guide to Jev, the AI decision model: choice, noul and score explained with code, business examples, a playground and a cost calculator.",
 "page": "index.html"
 },
@@ -500,7 +496,15 @@
 "page": "index.html"
 },
 {
+"text": "Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.",
+"page": "index.html"
+},
+{
 "text": "Describe your business and get copy-ready AI prompts for ads, Google Maps, SEO, content and reporting, in the order an ad agency would do the work.",
+"page": "index.html"
+},
+{
+"text": "Free investing lessons from beginner to quant: valuing companies, DCF, data sources, risk, trading and backtesting, with reveal-the-answer cards and calculators.",
 "page": "index.html"
 },
 {
@@ -548,10 +552,6 @@
 "page": "index.html"
 },
 {
-"text": "Free director of product training and certificates: strategy, experiments, metrics, pricing, the P&L, org design, executive influence and AI products.",
-"page": "index.html"
-},
-{
 "text": "Roll, doodle and hatch a giggly family of squishy 3D cubes. Hold hands with other players' cubes to make cube babies. A silly browser game to play with a grown-up.",
 "page": "index.html"
 },
@@ -569,6 +569,10 @@
 },
 {
 "text": "Post a bounty and get help from a neighbour: leaves, snow, junk, moving and 40 other jobs from $20. Pay in cash or Interac e-Transfer, with a quality bonus.",
+"page": "index.html"
+},
+{
+"text": "Upload an Excel workbook with its tables, formulas, rules and VBA macros and get a web app plus a small Python server that runs on your local network.",
 "page": "index.html"
 },
 {
@@ -904,7 +908,7 @@
 "page": "projects.html"
 },
 {
-"text": "See all 57 apps →",
+"text": "See all 58 apps →",
 "page": "projects.html"
 },
 {
@@ -1180,7 +1184,7 @@
 "page": "projects.html"
 },
 {
-"text": "Browse all 57 apps →",
+"text": "Browse all 58 apps →",
 "page": "projects.html"
 },
 {
@@ -1196,7 +1200,7 @@
 "page": "projects.html"
 },
 {
-"text": "57 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
+"text": "58 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
 "page": "apps.html"
 },
 {
@@ -1212,19 +1216,11 @@
 "page": "apps.html"
 },
 {
-"text": "57 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
+"text": "58 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
 "page": "apps.html"
 },
 {
 "text": "App groups",
-"page": "apps.html"
-},
-{
-"text": "ArviStay",
-"page": "apps.html"
-},
-{
-"text": "arvistay.com ↗",
 "page": "apps.html"
 },
 {
@@ -1312,6 +1308,14 @@
 "page": "apps.html"
 },
 {
+"text": "Sheetsmith",
+"page": "apps.html"
+},
+{
+"text": "sheetsmith.anvil.app ↗",
+"page": "apps.html"
+},
+{
 "text": "VitalRPA",
 "page": "apps.html"
 },
@@ -1340,6 +1344,14 @@
 "page": "apps.html"
 },
 {
+"text": "C-Suite Coach",
+"page": "apps.html"
+},
+{
+"text": "csuite-coach.anvil.app ↗",
+"page": "apps.html"
+},
+{
 "text": "caf-guide.anvil.app ↗",
 "page": "apps.html"
 },
@@ -1357,6 +1369,14 @@
 },
 {
 "text": "littleheroapp.com ↗",
+"page": "apps.html"
+},
+{
+"text": "Master Investor",
+"page": "apps.html"
+},
+{
+"text": "master-investor.anvil.app ↗",
 "page": "apps.html"
 },
 {
@@ -1380,14 +1400,6 @@
 "page": "apps.html"
 },
 {
-"text": "Product Expert",
-"page": "apps.html"
-},
-{
-"text": "productexpert.anvil.app ↗",
-"page": "apps.html"
-},
-{
 "text": "Humbeat",
 "page": "apps.html"
 },
@@ -1396,11 +1408,11 @@
 "page": "apps.html"
 },
 {
-"text": "ImgNovella",
+"text": "Make Your Own Clothes",
 "page": "apps.html"
 },
 {
-"text": "imgnovella.anvil.app ↗",
+"text": "make-my-clothes.anvil.app ↗",
 "page": "apps.html"
 },
 {
