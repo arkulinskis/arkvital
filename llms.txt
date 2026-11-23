@@ -53,7 +53,7 @@ The same list as a web page: https://arkvital.com/apps.html
 - [Humbeat](https://humbeat.anvil.app/): Make any song in your browser: pick a style from hopecore to heavy metal, record your voice with auto-tune, and hum a melody that becomes any instrument.
 - [ImgNovella](https://imgnovella.anvil.app/): Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.
 - [Jev Buddy](https://jev-buddy.anvil.app/): The friendly developer guide to Jev, the AI decision model: choice, noul and score explained with code, business examples, a playground and a cost calculator.
-- [Little Hero Books](https://littleheroapp.com/): Design a cartoon look-alike of your child, then read, colour, paint or print classic fairy tales starring them. Twelve tales retold for ages 3 to 6.
+- [Little Hero Books](https://littleheroapp.com/): Design a cartoon look-alike of your child, then read, colour, paint or print fairy tales starring them, or write your own. Nineteen stories for ages 3 to 6.
 - [Logsteps](https://logsteps.com/): Walk a room with your phone and get a 3D model you can replay, measure, pin notes on, share with a link and edit on your computer.
 - [Mafia Camp](https://mafia-camp-game.anvil.app/): A video party game for 3 to 10 friends: everyone joins one video call in the browser, gets a secret role and plays Mafia (Werewolf) at Camp Moonlake. No accounts.
 - [Make Your Own Clothes](https://make-my-clothes.anvil.app/): Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.
@@ -78,6 +78,7 @@ The same list as a web page: https://arkvital.com/apps.html
 - [Service Request](https://service-request.anvil.app/): Post a bounty and get help from a neighbour: leaves, snow, junk, moving and 40 other jobs from $20. Pay in cash or Interac e-Transfer, with a quality bonus.
 - [Sheetsmith](https://sheetsmith.anvil.app/): Upload an Excel workbook with its tables, formulas, rules and VBA macros and get a web app plus a small Python server that runs on your local network.
 - [Snackpuncher](https://snackpuncher.anvil.app/): A VR punching quest for Meta Quest and WebXR headsets: fight a horde of cartoon fast food across ten lands. Every battle is a workout. Also plays on screens.
+- [Spoken Miles](https://sayback.anvil.app/): 45-minute hands-free audio lessons for the car: hear English, say it in Spanish, French or Italian. Lifetime access, works offline. Lesson 1 free.
 - [Subsudo](https://subsudo.com/): Virtual fight club: record a shadow-boxing round with your phone or laptop camera, send it as a challenge, and climb the global and city rankings.
 - [Tai Chi Please](https://tai-chi-please.anvil.app/): Gentle morning tai chi in a bamboo forest: guided sessions with a 3D teacher, qigong, lymph self-massage and the 24-step form. Start without signing up.
 - [ToonyLoony](https://toonyloony.com/): Build cartoon characters, animate them with joints and sticks, then hold and drag them to record them moving in your own cartoon movie, with voices and music.

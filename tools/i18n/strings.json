@@ -256,23 +256,39 @@
 "page": "index.html"
 },
 {
-"text": "I’ve built 58 live apps for businesses, learners, families and creators. Here are three, picked at random.",
+"text": "I’ve built 59 live apps for businesses, learners, families and creators. Here are three, picked at random.",
 "page": "index.html"
 },
 {
-"text": "Make music, video and art",
+"text": "Health and everyday life",
 "page": "index.html"
 },
 {
-"text": "ImgNovella",
+"text": "Subsudo",
 "page": "index.html"
 },
 {
-"text": "Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.",
+"text": "Virtual fight club: record a shadow-boxing round with your phone or laptop camera, send it as a challenge, and climb the global and city rankings.",
 "page": "index.html"
 },
 {
-"text": "imgnovella.anvil.app ↗",
+"text": "subsudo.com ↗",
+"page": "index.html"
+},
+{
+"text": "Games and fun",
+"page": "index.html"
+},
+{
+"text": "Campfire",
+"page": "index.html"
+},
+{
+"text": "A campfire simulated live: fluid-simulated flames, crackles made by chance, logs that char and fall in. Three campsites, a sleep timer, no sign-up.",
+"page": "index.html"
+},
+{
+"text": "campfire.anvil.app ↗",
 "page": "index.html"
 },
 {
@@ -280,31 +296,15 @@
 "page": "index.html"
 },
 {
-"text": "Product Expert",
+"text": "Master Investor",
 "page": "index.html"
 },
 {
-"text": "Free director of product training and certificates: strategy, experiments, metrics, pricing, the P&L, org design, executive influence and AI products.",
+"text": "Free investing lessons from beginner to quant: valuing companies, DCF, data sources, risk, trading and backtesting, with reveal-the-answer cards and calculators.",
 "page": "index.html"
 },
 {
-"text": "productexpert.anvil.app ↗",
-"page": "index.html"
-},
-{
-"text": "Run a business",
-"page": "index.html"
-},
-{
-"text": "ArviStay",
-"page": "index.html"
-},
-{
-"text": "Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.",
-"page": "index.html"
-},
-{
-"text": "arvistay.com ↗",
+"text": "master-investor.anvil.app ↗",
 "page": "index.html"
 },
 {
@@ -312,7 +312,7 @@
 "page": "index.html"
 },
 {
-"text": "See all 58 apps",
+"text": "See all 59 apps",
 "page": "index.html"
 },
 {
@@ -392,6 +392,14 @@
 "page": "index.html"
 },
 {
+"text": "Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.",
+"page": "index.html"
+},
+{
+"text": "Run a business",
+"page": "index.html"
+},
+{
 "text": "Kanban, sprints and roadmaps for crews of humans and AI developers. Complexity-gate estimates, an agent API, and levels that unlock as your crew matures.",
 "page": "index.html"
 },
@@ -404,10 +412,6 @@
 "page": "index.html"
 },
 {
-"text": "Health and everyday life",
-"page": "index.html"
-},
-{
 "text": "How to open a small business in Montréal, step by step: barber shop, bakery, café, cleaning, trades and more. Permits, taxes, costs and a personal launch plan.",
 "page": "index.html"
 },
@@ -416,19 +420,11 @@
 "page": "index.html"
 },
 {
-"text": "Games and fun",
-"page": "index.html"
-},
-{
 "text": "Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.",
 "page": "index.html"
 },
 {
 "text": "An unofficial study app for the Canadian Armed Forces: active-recall flashcards on ranks, structure, training, history and acronyms, with a daily review.",
-"page": "index.html"
-},
-{
-"text": "A campfire simulated live: fluid-simulated flames, crackles made by chance, logs that char and fall in. Three campsites, a sleep timer, no sign-up.",
 "page": "index.html"
 },
 {
@@ -480,11 +476,19 @@
 "page": "index.html"
 },
 {
+"text": "Make music, video and art",
+"page": "index.html"
+},
+{
+"text": "Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.",
+"page": "index.html"
+},
+{
 "text": "The friendly developer guide to Jev, the AI decision model: choice, noul and score explained with code, business examples, a playground and a cost calculator.",
 "page": "index.html"
 },
 {
-"text": "Design a cartoon look-alike of your child, then read, colour, paint or print classic fairy tales starring them. Twelve tales retold for ages 3 to 6.",
+"text": "Design a cartoon look-alike of your child, then read, colour, paint or print fairy tales starring them, or write your own. Nineteen stories for ages 3 to 6.",
 "page": "index.html"
 },
 {
@@ -501,10 +505,6 @@
 },
 {
 "text": "Describe your business and get copy-ready AI prompts for ads, Google Maps, SEO, content and reporting, in the order an ad agency would do the work.",
-"page": "index.html"
-},
-{
-"text": "Free investing lessons from beginner to quant: valuing companies, DCF, data sources, risk, trading and backtesting, with reveal-the-answer cards and calculators.",
 "page": "index.html"
 },
 {
@@ -552,6 +552,10 @@
 "page": "index.html"
 },
 {
+"text": "Free director of product training and certificates: strategy, experiments, metrics, pricing, the P&L, org design, executive influence and AI products.",
+"page": "index.html"
+},
+{
 "text": "Roll, doodle and hatch a giggly family of squishy 3D cubes. Hold hands with other players' cubes to make cube babies. A silly browser game to play with a grown-up.",
 "page": "index.html"
 },
@@ -580,7 +584,7 @@
 "page": "index.html"
 },
 {
-"text": "Virtual fight club: record a shadow-boxing round with your phone or laptop camera, send it as a challenge, and climb the global and city rankings.",
+"text": "45-minute hands-free audio lessons for the car: hear English, say it in Spanish, French or Italian. Lifetime access, works offline. Lesson 1 free.",
 "page": "index.html"
 },
 {
@@ -908,7 +912,7 @@
 "page": "projects.html"
 },
 {
-"text": "See all 58 apps →",
+"text": "See all 59 apps →",
 "page": "projects.html"
 },
 {
@@ -1184,7 +1188,7 @@
 "page": "projects.html"
 },
 {
-"text": "Browse all 58 apps →",
+"text": "Browse all 59 apps →",
 "page": "projects.html"
 },
 {
@@ -1200,7 +1204,7 @@
 "page": "projects.html"
 },
 {
-"text": "58 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
+"text": "59 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
 "page": "apps.html"
 },
 {
@@ -1216,11 +1220,19 @@
 "page": "apps.html"
 },
 {
-"text": "58 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
+"text": "59 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
 "page": "apps.html"
 },
 {
 "text": "App groups",
+"page": "apps.html"
+},
+{
+"text": "ArviStay",
+"page": "apps.html"
+},
+{
+"text": "arvistay.com ↗",
 "page": "apps.html"
 },
 {
@@ -1372,14 +1384,6 @@
 "page": "apps.html"
 },
 {
-"text": "Master Investor",
-"page": "apps.html"
-},
-{
-"text": "master-investor.anvil.app ↗",
-"page": "apps.html"
-},
-{
 "text": "MrBigStage",
 "page": "apps.html"
 },
@@ -1400,11 +1404,35 @@
 "page": "apps.html"
 },
 {
+"text": "Product Expert",
+"page": "apps.html"
+},
+{
+"text": "productexpert.anvil.app ↗",
+"page": "apps.html"
+},
+{
+"text": "Spoken Miles",
+"page": "apps.html"
+},
+{
+"text": "sayback.anvil.app ↗",
+"page": "apps.html"
+},
+{
 "text": "Humbeat",
 "page": "apps.html"
 },
 {
 "text": "humbeat.anvil.app ↗",
+"page": "apps.html"
+},
+{
+"text": "ImgNovella",
+"page": "apps.html"
+},
+{
+"text": "imgnovella.anvil.app ↗",
 "page": "apps.html"
 },
 {
@@ -1516,14 +1544,6 @@
 "page": "apps.html"
 },
 {
-"text": "Subsudo",
-"page": "apps.html"
-},
-{
-"text": "subsudo.com ↗",
-"page": "apps.html"
-},
-{
 "text": "Tai Chi Please",
 "page": "apps.html"
 },
@@ -1545,14 +1565,6 @@
 },
 {
 "text": "busybun.com ↗",
-"page": "apps.html"
-},
-{
-"text": "Campfire",
-"page": "apps.html"
-},
-{
-"text": "campfire.anvil.app ↗",
 "page": "apps.html"
 },
 {
