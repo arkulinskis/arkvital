@@ -78,7 +78,7 @@ The same list as a web page: https://arkvital.com/apps.html
 - [Service Request](https://service-request.anvil.app/): Post a bounty and get help from a neighbour: leaves, snow, junk, moving and 40 other jobs from $20. Pay in cash or Interac e-Transfer, with a quality bonus.
 - [Sheetsmith](https://sheetsmith.anvil.app/): Upload an Excel workbook with its tables, formulas, rules and VBA macros and get a web app plus a small Python server that runs on your local network.
 - [Snackpuncher](https://snackpuncher.anvil.app/): A VR punching quest for Meta Quest and WebXR headsets: fight a horde of cartoon fast food across ten lands. Every battle is a workout. Also plays on screens.
-- [Spoken Miles](https://sayback.anvil.app/): 45-minute hands-free audio lessons for the car: hear English, say it in Spanish, French or Italian. Lifetime access, works offline. Lesson 1 free.
+- [Spoken Miles](https://spokenmiles.com/): 45-minute hands-free audio lessons for the car: hear English, say it in Spanish, French or Italian. Lifetime access, works offline. Lesson 1 free.
 - [Subsudo](https://subsudo.com/): Virtual fight club: record a shadow-boxing round with your phone or laptop camera, send it as a challenge, and climb the global and city rankings.
 - [Tai Chi Please](https://tai-chi-please.anvil.app/): Gentle morning tai chi in a bamboo forest: guided sessions with a 3D teacher, qigong, lymph self-massage and the 24-step form. Start without signing up.
 - [ToonyLoony](https://toonyloony.com/): Build cartoon characters, animate them with joints and sticks, then hold and drag them to record them moving in your own cartoon movie, with voices and music.
