@@ -182,9 +182,11 @@
   let apps;
   try { apps = JSON.parse(data.textContent); } catch (e) { return; }
   if (!Array.isArray(apps) || apps.length < 4) return;
+  // translated pages live one folder down (/fr/ etc.): take the path to assets/ from this script's own src
+  const base = ((document.querySelector('script[src*="site.js"]') || {}).getAttribute?.('src') || '').replace(/assets\/site\.js.*$/, '');
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const card = (a) => `<a class="project app-pick" href="${esc(a.url)}" target="_blank" rel="noopener">`
-    + `<img src="assets/img/apps/${esc(a.key)}.webp" alt="" width="720" height="450" loading="lazy">`
+    + `<img src="${base}assets/img/apps/${esc(a.key)}.webp" alt="" width="720" height="450" loading="lazy">`
     + `<div><span class="project-type">${esc(a.group)}</span><h3>${esc(a.name)}</h3><p>${esc(a.description)}</p>`
     + `<span class="project-link">${esc(a.host)} ↗</span></div></a>`;
   let shown = [...box.querySelectorAll('[data-key]')].map((el) => el.dataset.key);
