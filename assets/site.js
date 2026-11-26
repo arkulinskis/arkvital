@@ -207,3 +207,12 @@
     });
   }
 })();
+
+// Close the header's language and CV menus on an outside click or Escape
+(function () {
+  function closeAll(except) {
+    document.querySelectorAll(".site-header details[open]").forEach(function (d) { if (d !== except) d.removeAttribute("open"); });
+  }
+  document.addEventListener("click", function (e) { closeAll(e.target.closest && e.target.closest(".site-header details")); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeAll(null); });
+})();
