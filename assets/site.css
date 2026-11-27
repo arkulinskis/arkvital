@@ -539,3 +539,9 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans)}
 .site-header .nav-links li:has(.btn-cv)+li .btn{margin-left:0}
 @media (max-width:1180px){html[lang="en"] .cv-menu summary{display:flex}html[lang="en"] .cv-menu ul{position:static;box-shadow:none;border:0;padding:4px 0 0;background:transparent;text-align:center}}
 @media (max-width:1400px){html:not([lang="en"]) .cv-menu summary{display:flex}html:not([lang="en"]) .cv-menu ul{position:static;box-shadow:none;border:0;padding:4px 0 0;background:transparent;text-align:center}}
+/* Language menu always visible: while the header is folded into the menu button, a compact copy sits next to it */
+.lang-quick{display:none;list-style:none;margin:0;padding:0}
+.site-header .lang-quick .lang-menu summary{padding:8px 10px!important;color:#f6f1e7}
+.site-header .lang-quick .lang-menu ul{position:absolute!important;right:0;top:calc(100% + 6px);min-width:150px;padding:6px!important;background:#272727!important;border:1px solid rgb(255 255 255 / .14)!important;border-radius:10px;box-shadow:0 10px 30px rgb(0 0 0 / .3)!important}
+@media (max-width:1180px){html[lang="en"] .site-header .lang-quick{display:flex;order:2;margin-left:auto}html[lang="en"] .site-header .lang-quick+.menu-toggle{margin-left:4px}html[lang="en"] .nav-links .lang-menu{display:none}}
+@media (max-width:1400px){html:not([lang="en"]) .site-header .lang-quick{display:flex;order:2;margin-left:auto}html:not([lang="en"]) .site-header .lang-quick+.menu-toggle{margin-left:4px}html:not([lang="en"]) .nav-links .lang-menu{display:none}}

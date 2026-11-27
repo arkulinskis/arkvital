@@ -74,6 +74,7 @@ class Texts(HTMLParser):
 
 
 def no_switcher(text):
+    text = re.sub(r'<ul class="lang-(?:only|quick)"[^>]*><li class="lang-menu">.*?</details></li></ul>', "", text, flags=re.S)
     return re.sub(r'<li class="lang-menu">.*?</details></li>', "", text, flags=re.S)
 
 
@@ -148,8 +149,23 @@ def switcher(lang, page):
 
 
 def add_switcher(text, lang, page):
-    text = re.sub(r'<li class="lang-menu">.*?</details></li>', "", text, flags=re.S)
-    return text.replace('<li><a class="btn btn-ghost btn-cv"', switcher(lang, page) + '<li><a class="btn btn-ghost btn-cv"', 1)
+    text = no_switcher(text)
+    # compact copy next to the menu button, shown only while the header is folded (see .lang-quick in site.css)
+    toggle = '<button class="menu-toggle"'
+    if toggle in text:
+        text = text.replace(toggle, '<ul class="lang-quick">%s</ul>' % switcher(lang, page) + toggle, 1)
+    # goes just before the Download CV item (a menu since 2026-11-26), else before "Talk with me"
+    for anchor in ('<li class="cv-menu">', '<li><a class="btn btn-ghost btn-cv"', '<li><a class="btn btn-primary" href="https://tidycal.com'):
+        if anchor in text:
+            return text.replace(anchor, switcher(lang, page) + anchor, 1)
+    # 404 page: short header with only a "Back home" button
+    home = '<a class="btn btn-primary" href="index.html">'
+    if home in text:
+        menu = '<ul class="lang-only" style="list-style:none;margin:0 8px 0 auto;padding:0;display:flex">%s</ul>' % switcher(lang, page)
+        return text.replace(home, menu + home, 1)
+    if '<header class="site-header">' in text:
+        raise SystemExit("i18n: no place for the language menu in the header of %s (%s)" % (page, lang))
+    return text
 
 
 def add_hreflang(text, page):
