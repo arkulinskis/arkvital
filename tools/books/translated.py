@@ -37,7 +37,7 @@ L = {
     "ru": dict(
         name="Русский", author="Виталий Аркулинский", quotes="«»„“", serif="Lora",
         contents="Содержание", before="Прежде чем начать", contents_h="(?:Содержание|Оглавление)",
-        chapter=(r"Глава (\d+) — (.+)", "Глава {n}"), part=r"(Часть [IVX]+|Часть [а-яё]+): (.+)",
+        chapter=(r"Глава (\d+)(?: —|:) (.+)", "Глава {n}"), part=r"(Часть [IVX]+|Часть [а-яё]+): (.+)",
         special=r"(Эпилог|Приложение(?: [А-Я])?|Прежде чем начать) ?[—:] (.+)", part_sep=": ",
         back_matter=r"(Эпилог|Приложение|Примечания|Источники)",
         about_h="Об авторе", also_h="Ещё от Arkvital", also_back="Ещё от Arkvital", free_pdf="Бесплатное PDF-издание",
@@ -46,23 +46,23 @@ L = {
         rights="Все права защищены.",
         copy=[
             "Никакую часть этой книги нельзя воспроизводить или продавать в любой форме без письменного разрешения автора, кроме коротких цитат в рецензиях и статьях.",
-            "Люди в этой книге — собирательные образы. Любое сходство с реальными людьми случайно. Описанные исследования настоящие, их список — в конце книги.",
-            "Эта книга — общая информация и личный взгляд автора. Это не медицинская, психологическая, юридическая или финансовая консультация. Если тебе тяжело, поговори со специалистом, а в экстренной ситуации звони в местную службу экстренной помощи. В Канаде и США можно позвонить или написать на номер 988.",
+            "Люди в этой книге придуманы. Это собирательные образы. Любое сходство с реальными людьми случайно. Описанные исследования настоящие, их список есть в конце книги.",
+            "В этой книге общая информация и личный взгляд автора. Это не медицинская, психологическая, юридическая или финансовая консультация. Если тебе тяжело, поговори со специалистом, а в экстренной ситуации звони в местную службу экстренной помощи. В Канаде и США можно позвонить или написать на номер 988.",
         ],
-        edition="Бесплатное {fmt}-издание на русском языке, версия 1.0, ноябрь {y}.<br>Перевод с английского. Обложка и вёрстка — Arkvital.",
-        fonts_line="Набрано шрифтами Literata, Lora и Inter.", publisher="Издатель — Arkvital",
-        about="""<p><b>Arkvital</b> — это Виталий Аркулинский, инженер-механик и программист, который стал руководителем проектов и команд. Больше двенадцати лет, в десятке с лишним отраслей, он обучал менеджеров, делал инструменты для команд и научился сначала искать настоящую причину проблемы, а уже потом выбирать решение.</p>
+        edition="Бесплатное {fmt}-издание на русском языке, версия 1.0, ноябрь {y}.<br>Перевод с английского. Обложка и вёрстка: Arkvital.",
+        fonts_line="Набрано шрифтами Literata, Lora и Inter.", publisher="Издатель: Arkvital",
+        about="""<p><b>Arkvital</b> это Виталий Аркулинский. Он инженер-механик и программист, который стал руководителем проектов и команд. Больше двенадцати лет, в десятке с лишним отраслей, он обучал менеджеров, делал инструменты для команд и научился сначала искать настоящую причину проблемы, а уже потом выбирать решение.</p>
 <p>Он пишет о людях, прогрессе и тихой работе, на которой держится хорошая работа, на <a href="https://arkvital.com/ru/">arkvital.com</a> и делает небольшие полезные приложения через Addanapp.</p>
-<p>Если что-то в этой книге отозвалось — или наоборот, не попало, — он будет рад узнать. Короткий созвон можно забронировать на <a href="https://tidycal.com/arkvital">tidycal.com/arkvital</a>.</p>""",
+<p>Если что-то в этой книге отозвалось или, наоборот, не попало, он будет рад узнать. Короткий созвон можно забронировать на <a href="https://tidycal.com/arkvital">tidycal.com/arkvital</a>.</p>""",
         books={
             "180": dict(
                 title="В сумме 180",
-                subtitle="Достижение, Благодарность, Надежда — и громкое «А-А-Ах», которое держит их вместе",
+                subtitle="Достижение, Благодарность, Надежда и громкое «А-А-Ах», которое держит их вместе",
                 tagline="Углы любого треугольника в сумме дают 180.<br>Как и жизнь, которая работает.",
                 blurb=[
-                    "Достижение, Благодарность и Надежда — три угла хорошей жизни. Если раздуть один, он сжимает два других. Если потерять один, вся фигура складывается.",
+                    "Достижение, Благодарность и Надежда: три угла хорошей жизни. Если раздуть один, он сжимает два других. Если потерять один, вся фигура складывается.",
                     "В библиотечной комнате со складными стульями и кофе, который отдаёт монетками, пятеро обычных людей учатся рисовать этот треугольник: служить тем, кто тебе нравится, даже пока они не ответили взаимностью; каждый день говорить «спасибо», в том числе себе; и упрямо верить, что можно идти дальше.",
-                    "Смешная и практичная книга, опирающаяся на проверенные исследования. В конце — ежедневный ритуал на десять минут и один большой, громкий выдох. А-А-Ах.",
+                    "Смешная и практичная книга, опирающаяся на проверенные исследования. В конце есть ежедневный ритуал на десять минут и один большой, громкий выдох. А-А-Ах.",
                 ],
                 keywords="самопомощь, благодарность, надежда, достижения, тревога, Arkvital",
                 first_marker="## Пара слов перед началом",
@@ -71,17 +71,17 @@ L = {
             ),
             "hope": dict(
                 title="Зависимость от надежды",
-                subtitle="Почему мечтать приятнее, чем делать, — и как всё-таки запустить свою жизнь",
+                subtitle="Почему мечтать приятнее, чем делать, и как всё-таки запустить свою жизнь",
                 tagline="Мечта платит тебе ещё до того, как ты что-то сделал. В этом и проблема.",
                 blurb=[
-                    "У тебя есть папка с идеями. Каждая выглядит в голове прекрасно — и именно поэтому никогда не покидает папку: мечта выдаёт награду сразу, а работа приносит только баги.",
-                    "«Зависимость от надежды» — инженерное руководство по тому, как сломать эту привычку. Почему планирование ощущается как прогресс, как воспитание задало тебе настройки по умолчанию и какие жёсткие истины снимают чары. А потом — инструменты: прототипы, планы «если — то», петли обратной связи, связки и критерии остановки.",
-                    "Каждая глава заканчивается полевым испытанием, которое ты делаешь в течение 24 часов. Поднимайся вместе с пятью людьми из вторничной мастерской в гараже — они перестают мечтать о вершине и начинают двигаться.",
+                    "У тебя есть папка с идеями. Каждая выглядит в голове прекрасно. Именно поэтому она никогда не покидает папку: мечта выдаёт награду сразу, а работа приносит только баги.",
+                    "«Зависимость от надежды» это инженерное руководство по тому, как сломать эту привычку. Почему планирование ощущается как прогресс, как воспитание задало тебе настройки по умолчанию и какие жёсткие истины снимают чары. А потом идут инструменты: прототипы, планы «если… то», петли обратной связи, связки и критерии остановки.",
+                    "Каждая глава заканчивается полевым испытанием, которое ты делаешь в течение 24 часов. Поднимайся вместе с пятью людьми из вторничной мастерской в гараже. Они перестают мечтать о вершине и начинают двигаться.",
                 ],
                 keywords="самопомощь, мотивация, прокрастинация, привычки, инженерия, Arkvital",
                 first_marker="## Прежде чем начать",
                 cover=dict(l1="Зависимость", l2="от <i>надежды</i>",
-                           sub="Почему мечтать приятнее, чем делать, —<br>и как всё-таки запустить свою жизнь",
+                           sub="Почему мечтать приятнее, чем делать,<br>и как всё-таки запустить свою жизнь",
                            css=".cvhope .cv-title .l1{font-size:64px}.cvhope .cv-title .l2{font-size:58px}.cvhope .cv-sub{top:244px}"),
             ),
         },
@@ -89,7 +89,7 @@ L = {
     "fr": dict(
         name="Français", author="Vitalijs Arkulinskis", quotes=["« ", " »", "“", "”"], serif="Fraunces",
         contents="Table des matières", before="Avant de commencer", contents_h="Table des matières",
-        chapter=(r"Chapitre (\d+) — (.+)", "Chapitre {n}"), part=r"(Partie [0-9IVX]+) ?: (.+)",
+        chapter=(r"Chapitre (\d+)(?: —| ?:) (.+)", "Chapitre {n}"), part=r"(Partie [0-9IVX]+) ?: (.+)",
         special=r"(Épilogue|Annexe(?: [A-Z])?|Avant de commencer) ?[—:] (.+)", part_sep=" : ",
         back_matter=r"(Épilogue|Annexe|Notes|Sources)",
         about_h="À propos de l'auteur", also_h="Du même auteur", also_back="Du même auteur", free_pdf="Édition PDF gratuite",
@@ -109,7 +109,7 @@ L = {
         books={
             "180": dict(
                 title="Ça fait 180",
-                subtitle="Accomplissement, Appréciation, Espoir — et le grand AAH qui les tient ensemble",
+                subtitle="Accomplissement, Appréciation, Espoir et le grand AAH qui les tient ensemble",
                 tagline="Les angles d'un triangle font toujours 180.<br>Une vie qui marche aussi.",
                 blurb=[
                     "L'Accomplissement, l'Appréciation et l'Espoir sont les trois angles d'une bonne vie. Si tu en pousses un trop loin, il écrase les deux autres. Si tu en perds un, toute la forme s'effondre.",
@@ -123,7 +123,7 @@ L = {
             ),
             "hope": dict(
                 title="Accro à l'espoir",
-                subtitle="Pourquoi rêver fait plus de bien qu'agir — et comment lancer ta vie quand même",
+                subtitle="Pourquoi rêver fait plus de bien qu'agir, et comment lancer ta vie quand même",
                 tagline="Le rêve te paie avant que tu aies fait quoi que ce soit. C'est bien ça, le problème.",
                 blurb=[
                     "Tu as un dossier plein d'idées. Chacune est magnifique dans ta tête, et c'est justement pour ça qu'aucune n'en sort : le rêve te donne la récompense tout de suite, et l'action ne te donne que des bogues.",
@@ -140,7 +140,7 @@ L = {
     "lv": dict(
         name="Latviešu", author="Vitālijs Arkulinskis", quotes="„”‚‘", serif="Fraunces",
         contents="Saturs", before="Pirms sākam", contents_h="Saturs",
-        chapter=(r"(\d+)\. nodaļa — (.+)", "{n}. nodaļa"), part=r"(\d+\. daļa|[IVX]+ daļa): (.+)",
+        chapter=(r"(\d+)\. nodaļa(?: —|:) (.+)", "{n}. nodaļa"), part=r"(\d+\. daļa|[IVX]+ daļa): (.+)",
         special=r"(Epilogs|[A-Z] pielikums|Pielikums|Pirms sākam) ?[—:] (.+)", part_sep=": ",
         back_matter=r"(Epilogs|[A-Z] pielikums|Pielikums|Piezīmes|Avoti)",
         about_h="Par autoru", also_h="Vēl no Arkvital", also_back="Vēl no Arkvital", free_pdf="Bezmaksas PDF izdevums",
@@ -150,17 +150,17 @@ L = {
         copy=[
             "Nevienu šīs grāmatas daļu nedrīkst pavairot vai pārdot nekādā veidā bez autora rakstiskas atļaujas, izņemot īsus citātus recenzijās un rakstos.",
             "Cilvēki šajā grāmatā ir izdomāti, salikti no daudzu cilvēku iezīmēm. Jebkura līdzība ar reāliem cilvēkiem ir nejauša. Pieminētie pētījumi ir īsti, un to saraksts ir grāmatas beigās.",
-            "Šī grāmata sniedz vispārīgu informāciju un autora personīgo skatījumu. Tā nav medicīniska, psiholoģiska, juridiska vai finanšu konsultācija. Ja tev ir grūti, parunā ar speciālistu, bet ārkārtas situācijā zvani vietējam ārkārtas palīdzības numuram (Latvijā — 112). Kanādā un ASV var zvanīt vai rakstīt uz 988.",
+            "Šī grāmata sniedz vispārīgu informāciju un autora personīgo skatījumu. Tā nav medicīniska, psiholoģiska, juridiska vai finanšu konsultācija. Ja tev ir grūti, parunā ar speciālistu, bet ārkārtas situācijā zvani vietējam ārkārtas palīdzības numuram (Latvijā: 112). Kanādā un ASV var zvanīt vai rakstīt uz 988.",
         ],
-        edition="Bezmaksas {fmt} izdevums latviešu valodā, versija 1.0, {y}. gada novembris.<br>Tulkots no angļu valodas. Vāks un makets — Arkvital.",
-        fonts_line="Burtu saimes: Literata, Fraunces un Inter.", publisher="Izdevējs — Arkvital",
-        about="""<p><b>Arkvital</b> ir Vitālijs Arkulinskis — mašīnbūves un programmatūras inženieris, kurš kļuva par projektu un komandu vadītāju. Vairāk nekā divpadsmit gadus, vairāk nekā desmit nozarēs, viņš ir apmācījis vadītājus, veidojis rīkus komandām un iemācījies vispirms meklēt problēmas īsto cēloni un tikai tad izvēlēties risinājumu.</p>
+        edition="Bezmaksas {fmt} izdevums latviešu valodā, versija 1.0, {y}. gada novembris.<br>Tulkots no angļu valodas. Vāks un makets: Arkvital.",
+        fonts_line="Burtu saimes: Literata, Fraunces un Inter.", publisher="Izdevējs: Arkvital",
+        about="""<p><b>Arkvital</b> ir Vitālijs Arkulinskis, mašīnbūves un programmatūras inženieris, kurš kļuva par projektu un komandu vadītāju. Vairāk nekā divpadsmit gadus, vairāk nekā desmit nozarēs, viņš ir apmācījis vadītājus, veidojis rīkus komandām un iemācījies vispirms meklēt problēmas īsto cēloni un tikai tad izvēlēties risinājumu.</p>
 <p>Viņš raksta par cilvēkiem, progresu un kluso darbu, uz kura balstās labs darbs, vietnē <a href="https://arkvital.com/lv/">arkvital.com</a> un ar Addanapp veido nelielas, noderīgas lietotnes.</p>
-<p>Ja kaut kas šajā grāmatā tevi uzrunāja — vai tieši otrādi —, viņš labprāt to uzzinātu. Īsu sarunu vari pieteikt vietnē <a href="https://tidycal.com/arkvital">tidycal.com/arkvital</a>.</p>""",
+<p>Ja kaut kas šajā grāmatā tevi uzrunāja (vai tieši otrādi), viņš labprāt to uzzinātu. Īsu sarunu vari pieteikt vietnē <a href="https://tidycal.com/arkvital">tidycal.com/arkvital</a>.</p>""",
         books={
             "180": dict(
                 title="Kopā 180",
-                subtitle="Sasniegums, Pateicība, Cerība — un skaļais AAH, kas tos tur kopā",
+                subtitle="Sasniegums, Pateicība, Cerība un skaļais AAH, kas tos tur kopā",
                 tagline="Jebkura trijstūra leņķi kopā ir 180.<br>Tāpat kā dzīve, kas darbojas.",
                 blurb=[
                     "Sasniegums, Pateicība un Cerība ir trīs labas dzīves leņķi. Ja vienu uzpūt par lielu, tas saspiež pārējos divus. Ja vienu pazaudē, visa figūra saplok.",
@@ -173,17 +173,17 @@ L = {
             ),
             "hope": dict(
                 title="Atkarība no cerības",
-                subtitle="Kāpēc sapņot ir patīkamāk nekā darīt — un kā tomēr palaist savu dzīvi",
+                subtitle="Kāpēc sapņot ir patīkamāk nekā darīt, un kā tomēr palaist savu dzīvi",
                 tagline="Sapnis tev samaksā, pirms tu vēl kaut ko esi izdarījis. Tieši tā ir problēma.",
                 blurb=[
-                    "Tev ir mape ar idejām. Katra galvā izskatās brīnišķīga — un tieši tāpēc tā nekad netiek ārā no mapes: sapnis atlīdzību dod uzreiz, bet darīšana dod tikai kļūdas.",
-                    "<i>Atkarība no cerības</i> ir inženiera ceļvedis, kā salauzt šo ieradumu. Kāpēc plānošana šķiet kā progress, kā audzināšana iestatīja tavus noklusējumus un kuras skarbās patiesības lauž burvestību. Un tad rīki: prototipi, „ja — tad” plāni, atgriezeniskās saites cilpas, saites komandas un apstāšanās kritēriji.",
+                    "Tev ir mape ar idejām. Katra galvā izskatās brīnišķīga, un tieši tāpēc tā nekad netiek ārā no mapes: sapnis atlīdzību dod uzreiz, bet darīšana dod tikai kļūdas.",
+                    "<i>Atkarība no cerības</i> ir inženiera ceļvedis, kā salauzt šo ieradumu. Kāpēc plānošana šķiet kā progress, kā audzināšana iestatīja tavus noklusējumus un kuras skarbās patiesības lauž burvestību. Un tad rīki: prototipi, „ja… tad” plāni, atgriezeniskās saites cilpas, saites komandas un apstāšanās kritēriji.",
                     "Katra nodaļa beidzas ar lauka testu, ko izdari 24 stundu laikā. Kāp kopā ar pieciem cilvēkiem no otrdienas vakara garāžas darbnīcas, kuri beidz sapņot par virsotni un sāk kustēties.",
                 ],
                 keywords="pašpalīdzība, motivācija, atlikšana, ieradumi, inženierija, Arkvital",
                 first_marker="## Pirms sākam",
                 cover=dict(l1="Atkarība", l2="no <i>cerības</i>",
-                           sub="Kāpēc sapņot ir patīkamāk nekā darīt —<br>un kā tomēr palaist savu dzīvi",
+                           sub="Kāpēc sapņot ir patīkamāk nekā darīt,<br>un kā tomēr palaist savu dzīvi",
                            css=".cvhope .cv-title .l1{font-size:70px}"),
             ),
         },
@@ -406,7 +406,7 @@ def book_html(b, other, body, toc, pages, epigraph, with_markers):
 """
     mk = "" if with_markers else ".mk{display:none}"
     return f"""<!doctype html><html lang="{b['lang']}"><head><meta charset="utf-8">
-<title>{b['title']} — Arkvital</title>
+<title>{b['title']} · Arkvital</title>
 <style>{book_css(b)}{mk}</style></head>
 <body class="book-{b['en_slug']}">{frontm}<main class="body">{body}</main>{back}</body></html>"""
 
@@ -466,7 +466,7 @@ def e_opf(*a, **k):
 
 def e_nav(*a, **k):
     return _nav(*a, **k).replace(">Contents<", f">{CUR['contents']}<").replace(">Start reading<", f">{CUR['start']}<") \
-        .replace(">Cover<", f">{CUR['cover']}<").replace("— Contents</title>", f"— {CUR['contents']}</title>")
+        .replace(">Cover<", f">{CUR['cover']}<").replace("· Contents</title>", f"· {CUR['contents']}</title>")
 
 
 def e_front(b, epigraph):

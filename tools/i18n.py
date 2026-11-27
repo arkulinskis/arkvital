@@ -272,12 +272,12 @@ def relink(text, lang):
 # edition in that language when books/<slug>-<lang>.pdf exists; every card lists the other languages.
 BOOK_LANG_NAMES = {"en": "English", "fr": "Français", "ru": "Русский", "lv": "Latviešu"}
 BOOK_EDITIONS = {
-    "fr": {"adds-up-to-180": ("Ça fait 180", "Accomplissement, Appréciation, Espoir — et le grand AAH qui les tient ensemble"),
-           "addicted-to-hope": ("Accro à l'espoir", "Pourquoi rêver fait plus de bien qu'agir — et comment lancer ta vie quand même")},
-    "ru": {"adds-up-to-180": ("В сумме 180", "Достижение, Благодарность, Надежда — и громкое «А-А-Ах», которое держит их вместе"),
-           "addicted-to-hope": ("Зависимость от надежды", "Почему мечтать приятнее, чем делать, — и как всё-таки запустить свою жизнь")},
-    "lv": {"adds-up-to-180": ("Kopā 180", "Sasniegums, Pateicība, Cerība — un skaļais AAH, kas tos tur kopā"),
-           "addicted-to-hope": ("Atkarība no cerības", "Kāpēc sapņot ir patīkamāk nekā darīt — un kā tomēr palaist savu dzīvi")},
+    "fr": {"adds-up-to-180": ("Ça fait 180", "Accomplissement, Appréciation, Espoir et le grand AAH qui les tient ensemble"),
+           "addicted-to-hope": ("Accro à l'espoir", "Pourquoi rêver fait plus de bien qu'agir, et comment lancer ta vie quand même")},
+    "ru": {"adds-up-to-180": ("В сумме 180", "Достижение, Благодарность, Надежда и громкое «А-А-Ах», которое держит их вместе"),
+           "addicted-to-hope": ("Зависимость от надежды", "Почему мечтать приятнее, чем делать, и как всё-таки запустить свою жизнь")},
+    "lv": {"adds-up-to-180": ("Kopā 180", "Sasniegums, Pateicība, Cerība un skaļais AAH, kas tos tur kopā"),
+           "addicted-to-hope": ("Atkarība no cerības", "Kāpēc sapņot ir patīkamāk nekā darīt, un kā tomēr palaist savu dzīvi")},
 }
 BOOK_EN = {"adds-up-to-180": ("Adds Up to 180", 30), "addicted-to-hope": ("Addicted to Hope", 41)}
 

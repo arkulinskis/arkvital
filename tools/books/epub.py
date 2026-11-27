@@ -198,7 +198,7 @@ def nav_xhtml(b, tree, cover_file):
 <li><a epub:type="toc" href="nav.xhtml">Contents</a></li>
 <li><a epub:type="bodymatter" href="{first}">Start reading</a></li>
 </ol></nav>"""
-    return page(f"{b['title']} — Contents", body, body_class="front")
+    return page(f"{b['title']} · Contents", body, body_class="front")
 
 
 def ncx(b, uid, tree):

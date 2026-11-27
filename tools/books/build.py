@@ -36,7 +36,7 @@ BOOKS = [
         slug="adds-up-to-180",
         src=WORK / "adds-up-to-180" / "Adds-Up-To-180.md",
         title="Adds Up to 180",
-        subtitle="Achievement, Appreciation, Hope — and the Big Loud AAH That Holds Them Together",
+        subtitle="Achievement, Appreciation, Hope, and the Big Loud AAH That Holds Them Together",
         author_cover="ARKVITAL",
         accent="#b9512d",
         tagline="Every triangle adds up to 180.<br>So does a life that works.",
@@ -114,7 +114,7 @@ def classify(b, level, txt):
 
 
 def split_label(txt):
-    m = re.match(r"Chapter (\d+) — (.+)", txt) or re.match(r"(\d+)\. (.+)", txt)
+    m = re.match(r"Chapter (\d+)(?: —|:) (.+)", txt) or re.match(r"(\d+)\. (.+)", txt)
     if m:
         return f"Chapter {m.group(1)}", m.group(2), m.group(1)
     m = re.match(r"(Part [A-Za-z]+|Part [IVX]+): (.+)", txt)
@@ -254,7 +254,7 @@ def book_html(b, other, body, toc, pages, epigraph, with_markers):
 """
     mk = "" if with_markers else ".mk{display:none}"
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>{b['title']} — Arkvital</title>
+<title>{b['title']} · Arkvital</title>
 <style>{book_css(b)}{mk}</style></head>
 <body class="book-{b['slug']}">{front}<main class="body">{body}</main>{back}</body></html>"""
 
