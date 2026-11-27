@@ -20,10 +20,22 @@ The site is in English, with full translations in French (https://arkvital.com/f
 
 ## Free books
 
-- [Addicted To Hope](https://arkvital.com/books/addicted-to-hope.pdf)
-- [Addicted To Hope (EPUB)](https://arkvital.com/books/addicted-to-hope.epub)
-- [Adds Up To 180](https://arkvital.com/books/adds-up-to-180.pdf)
-- [Adds Up To 180 (EPUB)](https://arkvital.com/books/adds-up-to-180.epub)
+- [Accro à l'espoir (French edition of Addicted to Hope)](https://arkvital.com/books/addicted-to-hope-fr.pdf)
+- [Accro à l'espoir (French edition of Addicted to Hope) (EPUB)](https://arkvital.com/books/addicted-to-hope-fr.epub)
+- [Atkarība no cerības (Latvian edition of Addicted to Hope)](https://arkvital.com/books/addicted-to-hope-lv.pdf)
+- [Atkarība no cerības (Latvian edition of Addicted to Hope) (EPUB)](https://arkvital.com/books/addicted-to-hope-lv.epub)
+- [Зависимость от надежды (Russian edition of Addicted to Hope)](https://arkvital.com/books/addicted-to-hope-ru.pdf)
+- [Зависимость от надежды (Russian edition of Addicted to Hope) (EPUB)](https://arkvital.com/books/addicted-to-hope-ru.epub)
+- [Addicted to Hope](https://arkvital.com/books/addicted-to-hope.pdf)
+- [Addicted to Hope (EPUB)](https://arkvital.com/books/addicted-to-hope.epub)
+- [Ça fait 180 (French edition of Adds Up to 180)](https://arkvital.com/books/adds-up-to-180-fr.pdf)
+- [Ça fait 180 (French edition of Adds Up to 180) (EPUB)](https://arkvital.com/books/adds-up-to-180-fr.epub)
+- [Kopā 180 (Latvian edition of Adds Up to 180)](https://arkvital.com/books/adds-up-to-180-lv.pdf)
+- [Kopā 180 (Latvian edition of Adds Up to 180) (EPUB)](https://arkvital.com/books/adds-up-to-180-lv.epub)
+- [В сумме 180 (Russian edition of Adds Up to 180)](https://arkvital.com/books/adds-up-to-180-ru.pdf)
+- [В сумме 180 (Russian edition of Adds Up to 180) (EPUB)](https://arkvital.com/books/adds-up-to-180-ru.epub)
+- [Adds Up to 180](https://arkvital.com/books/adds-up-to-180.pdf)
+- [Adds Up to 180 (EPUB)](https://arkvital.com/books/adds-up-to-180.epub)
 
 ## Apps by Arkvital
 

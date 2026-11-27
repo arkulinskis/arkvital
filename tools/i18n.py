@@ -168,7 +168,8 @@ def keep(s):
 
 KEEP = {"Beat Saber: Faster Songs on Expert+, episode 1",  # YouTube video titles stay as published
         "Just For Laughs Gags: Priest Gets Drunk On Holy Wine, Psychic Reading In Bathroom, Cannonball Prank",
-        "Vitalijs Arkulinskis", "LinkedIn ↗", "arkvital@outlook.com", "LinkedIn", "Adds Up to 180", "Addicted to Hope"}
+        "Vitalijs Arkulinskis", "LinkedIn ↗", "arkvital@outlook.com", "LinkedIn", "Adds Up to 180", "Addicted to Hope",
+        "English", "Français", "Русский", "Latviešu", "·"}
 _NAMES = []
 
 
@@ -251,6 +252,75 @@ def relink(text, lang):
     return re.sub(r'\b(href|src|srcset)=(["\'])([^"\']*)\2', fix, text)
 
 
+# Translated editions of the books (tools/books/translated.py). On /<lang>/blogs.html the book cards offer the
+# edition in that language when books/<slug>-<lang>.pdf exists; every card lists the other languages.
+BOOK_LANG_NAMES = {"en": "English", "fr": "Français", "ru": "Русский", "lv": "Latviešu"}
+BOOK_EDITIONS = {
+    "fr": {"adds-up-to-180": ("Ça fait 180", "Accomplissement, Appréciation, Espoir — et le grand AAH qui les tient ensemble"),
+           "addicted-to-hope": ("Accro à l'espoir", "Pourquoi rêver fait plus de bien qu'agir — et comment lancer ta vie quand même")},
+    "ru": {"adds-up-to-180": ("В сумме 180", "Достижение, Благодарность, Надежда — и громкое «А-А-Ах», которое держит их вместе"),
+           "addicted-to-hope": ("Зависимость от надежды", "Почему мечтать приятнее, чем делать, — и как всё-таки запустить свою жизнь")},
+    "lv": {"adds-up-to-180": ("Kopā 180", "Sasniegums, Pateicība, Cerība — un skaļais AAH, kas tos tur kopā"),
+           "addicted-to-hope": ("Atkarība no cerības", "Kāpēc sapņot ir patīkamāk nekā darīt — un kā tomēr palaist savu dzīvi")},
+}
+BOOK_EN = {"adds-up-to-180": ("Adds Up to 180", 30), "addicted-to-hope": ("Addicted to Hope", 41)}
+
+
+def _plural(n, one, few, many, lang):
+    if lang == "ru":
+        if n % 10 == 1 and n % 100 != 11:
+            return one
+        return few if 2 <= n % 10 <= 4 and not 12 <= n % 100 <= 14 else many
+    if lang == "lv":
+        return one if n % 10 == 1 and n % 100 != 11 else many
+    return one if n == 1 else many
+
+
+def book_meta(slug, lang, chapters):
+    from pypdf import PdfReader
+    pdf, ep = HERE / "books" / f"{slug}.pdf", HERE / "books" / f"{slug}.epub"
+    pages = len(PdfReader(str(pdf)).pages)
+    mb = f"{pdf.stat().st_size / 1e6:.1f}".replace(".", ",")
+    kb = round(ep.stat().st_size / 1e4) * 10
+    if lang == "fr":
+        return f"{pages} pages · {chapters} chapitres · PDF {mb} Mo · EPUB {kb} Ko"
+    if lang == "ru":
+        return (f"{pages} {_plural(pages, 'страница', 'страницы', 'страниц', 'ru')} · {chapters} "
+                f"{_plural(chapters, 'глава', 'главы', 'глав', 'ru')} · PDF {mb} МБ · EPUB {kb} КБ")
+    return (f"{pages} {_plural(pages, 'lappuse', '', 'lappuses', 'lv')} · {chapters} "
+            f"{_plural(chapters, 'nodaļa', '', 'nodaļas', 'lv')} · PDF {mb} MB · EPUB {kb} KB")
+
+
+def localize_books(text, lang):
+    """Swap each book card on a translated page to that language's edition and list the other languages."""
+    def card(m):
+        art = m.group(0)
+        slug = re.search(r'href="books/([a-z0-9-]+)\.pdf"', art).group(1)
+        if slug not in BOOK_EN:
+            return art
+        main = lang if lang in BOOK_EDITIONS and (HERE / "books" / f"{slug}-{lang}.pdf").exists() else "en"
+        others = [l for l in BOOK_LANG_NAMES if l != main and (l == "en" or (HERE / "books" / f"{slug}-{l}.pdf").exists())]
+        links = " · ".join('<a href="books/%s.pdf" hreflang="%s" lang="%s" type="application/pdf">%s</a>'
+                           % (slug if l == "en" else f"{slug}-{l}", l, l, BOOK_LANG_NAMES[l]) for l in others)
+        art = re.sub(r'(<p class="book-meta book-langs"[^>]*>)(.*?)</p>',
+                     lambda mm: f"{mm.group(1)}{mm.group(2).split('<a')[0].rstrip()} {links}</p>", art, flags=re.S)
+        if main == "en":
+            return art
+        title, sub = BOOK_EDITIONS[lang][slug]
+        en_title, chapters = BOOK_EN[slug]
+        art = art.replace(f"books/{slug}.pdf", f"books/{slug}-{lang}.pdf").replace(f"books/{slug}.epub", f"books/{slug}-{lang}.epub")
+        art = art.replace(f"assets/img/books/{slug}-cover.webp", f"assets/img/books/{slug}-{lang}-cover.webp")
+        art = re.sub(r'download="([^"]+)-Arkvital\.(pdf|epub)"', lambda mm: f'download="{mm.group(1)}-Arkvital-{lang.upper()}.{mm.group(2)}"', art)
+        # the other-language links keep pointing at the English file
+        art = art.replace(f'href="books/{slug}-{lang}.pdf" hreflang="en"', f'href="books/{slug}.pdf" hreflang="en"')
+        art = art.replace(en_title, html.escape(title, quote=True))
+        art = art.replace("d’Ça", "de Ça")   # French elision: « couverture de Ça fait 180 »
+        art = re.sub(r'<p class="book-sub">.*?</p>', f'<p class="book-sub">{html.escape(sub, quote=False)}</p>', art, flags=re.S)
+        art = re.sub(r'<p class="book-meta">.*?</p>', f'<p class="book-meta">{book_meta(f"{slug}-{lang}", lang, chapters)}</p>', art, flags=re.S)
+        return art
+    return re.sub(r'<article class="book">.*?</article>', card, text, flags=re.S)
+
+
 def build_page(page, lang):
     src = no_switcher((HERE / page).read_text(encoding="utf-8"))
     if lang == "en":
@@ -258,6 +328,8 @@ def build_page(page, lang):
         return out, set()
     tr = Translator(lang)
     out = translate_html(no_french_section(src), tr)
+    if page == "blogs.html":
+        out = localize_books(out, lang)
     out = relink(out, lang)
     out = re.sub(r'<html lang="[^"]*"', '<html lang="%s"' % lang, out, count=1)
     out = re.sub(r'<link rel="canonical" href="[^"]*">', '<link rel="canonical" href="%s">' % url_of(lang, page), out, count=1)

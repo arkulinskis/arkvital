@@ -16,6 +16,7 @@ import json
 import pathlib
 import re
 import subprocess
+import sys
 
 SITE = "https://arkvital.com"
 HERE = pathlib.Path(__file__).resolve().parent.parent
@@ -123,6 +124,21 @@ def apps():
     return ["- [%s](%s): %s" % (a["name"], a["url"], a["description"]) for a in app_list()]
 
 
+
+BOOK_TITLES = {"adds-up-to-180": "Adds Up to 180", "addicted-to-hope": "Addicted to Hope"}
+BOOK_LANGS = {"fr": "French", "ru": "Russian", "lv": "Latvian", "es": "Spanish"}
+
+
+def book_name(stem):
+    """'addicted-to-hope-fr' -> 'Accro à l'espoir (French edition of Addicted to Hope)'."""
+    sys.path.insert(0, str(HERE / "tools"))
+    from i18n import BOOK_EDITIONS
+    base, _, lang = stem.rpartition("-")
+    if lang in BOOK_LANGS and base in BOOK_TITLES:
+        title = BOOK_EDITIONS.get(lang, {}).get(base, (BOOK_TITLES[base],))[0]
+        return "%s (%s edition of %s)" % (title, BOOK_LANGS[lang], BOOK_TITLES[base])
+    return BOOK_TITLES.get(stem, stem.replace("-", " ").title())
+
 def llms():
     idx = read("index.html")
     desc = meta(idx, r'<meta name="description" content="([^"]*)"')
@@ -137,7 +153,7 @@ def llms():
     if books:
         out += ["", "## Free books", ""]
         for b in books:
-            name = b.stem.replace("-", " ").title()
+            name = book_name(b.stem)
             out.append("- [%s](%s/books/%s)" % (name, SITE, b.name))
             if b.with_suffix(".epub").exists():
                 out.append("- [%s (EPUB)](%s/books/%s)" % (name, SITE, b.with_suffix(".epub").name))
