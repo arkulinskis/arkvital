@@ -52,6 +52,14 @@
 "page": "index.html"
 },
 {
+"text": "English",
+"page": "index.html"
+},
+{
+"text": "Français",
+"page": "index.html"
+},
+{
 "text": "Talk with me",
 "page": "index.html"
 },
@@ -256,39 +264,39 @@
 "page": "index.html"
 },
 {
-"text": "I’ve built 60 live apps for businesses, learners, families and creators. Here are three, picked at random.",
+"text": "I’ve built 61 live apps for businesses, learners, families and creators. Here are three, picked at random.",
 "page": "index.html"
 },
 {
-"text": "Handy tools",
+"text": "Learn something",
 "page": "index.html"
 },
 {
-"text": "CarChoice",
+"text": "C-Suite Coach",
 "page": "index.html"
 },
 {
-"text": "Filter 268 car models by price, power, range, cargo, seats, towing and features, shortlist five, search the marketplaces and spot the listing that's priced well.",
+"text": "Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.",
 "page": "index.html"
 },
 {
-"text": "carchoice.anvil.app ↗",
+"text": "csuite-coach.anvil.app ↗",
 "page": "index.html"
 },
 {
-"text": "Run a business",
+"text": "Make music, video and art",
 "page": "index.html"
 },
 {
-"text": "MonShop",
+"text": "Make Your Own Clothes",
 "page": "index.html"
 },
 {
-"text": "See what independent shops, cafés and restaurants near you have today, from real shelf photos and specials, and get 5% off where you are a regular.",
+"text": "Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.",
 "page": "index.html"
 },
 {
-"text": "monshop.ca ↗",
+"text": "make-my-clothes.anvil.app ↗",
 "page": "index.html"
 },
 {
@@ -296,15 +304,15 @@
 "page": "index.html"
 },
 {
-"text": "Subsudo",
+"text": "Service Request",
 "page": "index.html"
 },
 {
-"text": "Virtual fight club: record a shadow-boxing round with your phone or laptop camera, send it as a challenge, and climb the global and city rankings.",
+"text": "Post a bounty and get help from a neighbour: leaves, snow, junk, moving and 40 other jobs from $20. Pay in cash or Interac e-Transfer, with a quality bonus.",
 "page": "index.html"
 },
 {
-"text": "subsudo.com ↗",
+"text": "service-request.anvil.app ↗",
 "page": "index.html"
 },
 {
@@ -312,7 +320,7 @@
 "page": "index.html"
 },
 {
-"text": "See all 60 apps",
+"text": "See all 61 apps",
 "page": "index.html"
 },
 {
@@ -388,11 +396,11 @@
 "page": "index.html"
 },
 {
-"text": "Fuzzy-hearted, well-sourced science news written by the community. Anyone can write an article; Lab Directors review every one before it is published.",
+"text": "Handy tools",
 "page": "index.html"
 },
 {
-"text": "Learn something",
+"text": "Fuzzy-hearted, well-sourced science news written by the community. Anyone can write an article; Lab Directors review every one before it is published.",
 "page": "index.html"
 },
 {
@@ -401,6 +409,10 @@
 },
 {
 "text": "Make a beautiful Art Nouveau website for your hotel: rooms, videos, 360-degree tours, a 3D neighbourhood map and an hour-by-hour stay plan for every kind of guest.",
+"page": "index.html"
+},
+{
+"text": "Run a business",
 "page": "index.html"
 },
 {
@@ -428,15 +440,15 @@
 "page": "index.html"
 },
 {
-"text": "Executive training for the C-suite: real business cases, boardroom challenges and spaced-repetition drills. Earn C-Suite Coach Institute certificates.",
-"page": "index.html"
-},
-{
 "text": "An unofficial study app for the Canadian Armed Forces: active-recall flashcards on ranks, structure, training, history and acronyms, with a daily review.",
 "page": "index.html"
 },
 {
 "text": "A campfire simulated live: fluid-simulated flames, crackles made by chance, logs that char and fall in. Three campsites, a sleep timer, no sign-up.",
+"page": "index.html"
+},
+{
+"text": "Filter 268 car models by price, power, range, cargo, seats, towing and features, shortlist five, search the marketplaces and spot the listing that's priced well.",
 "page": "index.html"
 },
 {
@@ -480,10 +492,6 @@
 "page": "index.html"
 },
 {
-"text": "Make music, video and art",
-"page": "index.html"
-},
-{
 "text": "Make visual novels in your browser: scenes, characters, branching choices and multiple endings. Share a link or export a playable HTML game to sell. No scripting.",
 "page": "index.html"
 },
@@ -504,15 +512,15 @@
 "page": "index.html"
 },
 {
-"text": "Draft made-to-measure sewing patterns, redraw them, sew them in 3D on a mannequin with your measurements, and follow a step-by-step making book.",
-"page": "index.html"
-},
-{
 "text": "Describe your business and get copy-ready AI prompts for ads, Google Maps, SEO, content and reporting, in the order an ad agency would do the work.",
 "page": "index.html"
 },
 {
 "text": "Free investing lessons from beginner to quant: valuing companies, DCF, data sources, risk, trading and backtesting, with reveal-the-answer cards and calculators.",
+"page": "index.html"
+},
+{
+"text": "See what independent shops, cafés and restaurants near you have today, from real shelf photos and specials, and get 5% off where you are a regular.",
 "page": "index.html"
 },
 {
@@ -560,6 +568,10 @@
 "page": "index.html"
 },
 {
+"text": "Free QA training with certificates: test automation, flaky tests, AI-assisted testing, LLM evals and red teaming, security, accessibility and QA leadership.",
+"page": "index.html"
+},
+{
 "text": "Roll, doodle and hatch a giggly family of squishy 3D cubes. Hold hands with other players' cubes to make cube babies. A silly browser game to play with a grown-up.",
 "page": "index.html"
 },
@@ -572,10 +584,6 @@
 "page": "index.html"
 },
 {
-"text": "Post a bounty and get help from a neighbour: leaves, snow, junk, moving and 40 other jobs from $20. Pay in cash or Interac e-Transfer, with a quality bonus.",
-"page": "index.html"
-},
-{
 "text": "Upload an Excel workbook with its tables, formulas, rules and VBA macros and get a web app plus a small Python server that runs on your local network.",
 "page": "index.html"
 },
@@ -585,6 +593,10 @@
 },
 {
 "text": "45-minute hands-free audio lessons for the car: hear English, say it in Spanish, French or Italian. Lifetime access, works offline. Lesson 1 free.",
+"page": "index.html"
+},
+{
+"text": "Virtual fight club: record a shadow-boxing round with your phone or laptop camera, send it as a challenge, and climb the global and city rankings.",
 "page": "index.html"
 },
 {
@@ -912,7 +924,7 @@
 "page": "projects.html"
 },
 {
-"text": "See all 60 apps →",
+"text": "See all 61 apps →",
 "page": "projects.html"
 },
 {
@@ -945,6 +957,10 @@
 },
 {
 "text": "TWO-SIDED MARKETPLACE",
+"page": "projects.html"
+},
+{
+"text": "MonShop",
 "page": "projects.html"
 },
 {
@@ -1156,7 +1172,7 @@
 "page": "projects.html"
 },
 {
-"text": "Browse all 60 apps →",
+"text": "Browse all 61 apps →",
 "page": "projects.html"
 },
 {
@@ -1172,7 +1188,7 @@
 "page": "projects.html"
 },
 {
-"text": "60 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
+"text": "61 web apps made by Vitalijs Arkulinskis (Arkvital, Montreal): business tools, learning apps, music and video studios, games and everyday helpers.",
 "page": "apps.html"
 },
 {
@@ -1188,7 +1204,7 @@
 "page": "apps.html"
 },
 {
-"text": "60 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
+"text": "61 live web apps, made by Arkvital in Montreal. They all run in the browser, with nothing to install. Open any of them to try it.",
 "page": "apps.html"
 },
 {
@@ -1276,6 +1292,10 @@
 "page": "apps.html"
 },
 {
+"text": "monshop.ca ↗",
+"page": "apps.html"
+},
+{
 "text": "planplate.com ↗",
 "page": "apps.html"
 },
@@ -1329,14 +1349,6 @@
 },
 {
 "text": "business-buddy.anvil.app ↗",
-"page": "apps.html"
-},
-{
-"text": "C-Suite Coach",
-"page": "apps.html"
-},
-{
-"text": "csuite-coach.anvil.app ↗",
 "page": "apps.html"
 },
 {
@@ -1396,6 +1408,14 @@
 "page": "apps.html"
 },
 {
+"text": "QA Mastery",
+"page": "apps.html"
+},
+{
+"text": "qa-mastery.anvil.app ↗",
+"page": "apps.html"
+},
+{
 "text": "Spoken Miles",
 "page": "apps.html"
 },
@@ -1417,14 +1437,6 @@
 },
 {
 "text": "imgnovella.anvil.app ↗",
-"page": "apps.html"
-},
-{
-"text": "Make Your Own Clothes",
-"page": "apps.html"
-},
-{
-"text": "make-my-clothes.anvil.app ↗",
 "page": "apps.html"
 },
 {
@@ -1520,11 +1532,11 @@
 "page": "apps.html"
 },
 {
-"text": "Service Request",
+"text": "Subsudo",
 "page": "apps.html"
 },
 {
-"text": "service-request.anvil.app ↗",
+"text": "subsudo.com ↗",
 "page": "apps.html"
 },
 {
@@ -1613,6 +1625,14 @@
 },
 {
 "text": "addarobot.com ↗",
+"page": "apps.html"
+},
+{
+"text": "CarChoice",
+"page": "apps.html"
+},
+{
+"text": "carchoice.anvil.app ↗",
 "page": "apps.html"
 },
 {
@@ -1708,7 +1728,7 @@
 "page": "blogs.html"
 },
 {
-"text": "Achievement, Appreciation, Hope — and the big loud AAH that holds them together",
+"text": "Achievement, Appreciation, Hope, and the big loud AAH that holds them together",
 "page": "blogs.html"
 },
 {
@@ -1716,7 +1736,7 @@
 "page": "blogs.html"
 },
 {
-"text": "137 pages · 30 chapters · PDF 1.9 MB · EPUB 330 KB",
+"text": "137 pages · 30 chapters · PDF 2.5 MB · EPUB 340 KB",
 "page": "blogs.html"
 },
 {
@@ -1729,6 +1749,14 @@
 },
 {
 "text": "Read in browser ↗",
+"page": "blogs.html"
+},
+{
+"text": "Other languages:",
+"page": "blogs.html"
+},
+{
+"text": "Latviešu",
 "page": "blogs.html"
 },
 {
@@ -1756,7 +1784,7 @@
 "page": "blogs.html"
 },
 {
-"text": "158 pages · 41 chapters · PDF 2.2 MB · EPUB 240 KB",
+"text": "158 pages · 41 chapters · PDF 2.4 MB · EPUB 250 KB",
 "page": "blogs.html"
 },
 {
